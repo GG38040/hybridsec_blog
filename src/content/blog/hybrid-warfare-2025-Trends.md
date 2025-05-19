@@ -5,8 +5,8 @@ pubDate: 2025-05-19
 topic: "hybrid-warfare"
 featuredImage: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg"
 author:
-  name: "Col. James Harrison (Ret.)"
-  bio: "Former military intelligence officer and analyst specializing in information operations and hybrid warfare strategies."
+  name: "yankee0one"
+  bio: "multi domain expert"
   avatar: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
 tags: ["hybrid warfare", "cyber operations", "disinformation", "proxy conflict", "national security"]
 ---
