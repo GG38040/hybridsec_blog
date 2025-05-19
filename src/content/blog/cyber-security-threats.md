@@ -7,7 +7,7 @@ featuredImage: "https://images.pexels.com/photos/60504/security-protection-anti-
 author:
   name: "yankee0one"
   bio: "Cybersecurity leader with expertise in incident response, threat detection, and cyber defense operations."
-  avatar: "https://github.com/GG38040/GG3Website/blob/master/resumeImages/profile.jpg"
+  avatar: "[https://github.com/GG38040/GG3Website/blob/master/resumeImages/profile.jpg](https://github.com/GG38040/GG3Website/blob/master/resumeImages/profile.jpg)"
 tags: ["cybersecurity", "cyber threats", "ransomware", "supply chain"]
 ---
 
