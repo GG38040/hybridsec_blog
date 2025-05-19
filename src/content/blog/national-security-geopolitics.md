@@ -5,8 +5,8 @@ pubDate: 2023-09-05
 topic: "national-security"
 featuredImage: "https://images.pexels.com/photos/4065194/pexels-photo-4065194.jpeg"
 author:
-  name: "Dr. Michael Reynolds"
-  bio: "Former diplomatic advisor with expertise in international relations and security studies."
+  name: "yankee0one"
+  bio: "Former documentary junky turned pilot, turned sailor, turned cyborg"
   avatar: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg"
 tags: ["geopolitics", "national security", "international relations"]
 ---
