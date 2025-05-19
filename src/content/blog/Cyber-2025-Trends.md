@@ -5,8 +5,8 @@ pubDate: 2025-05-19
 topic: "cyber-security"
 featuredImage: "https://images.pexels.com/photos/5380665/pexels-photo-5380665.jpeg"
 author:
-  name: "Greg Hartwell"
-  bio: "Cybersecurity leader specializing in incident response, threat detection, and cyber defense operations for Fortune 1000 enterprises."
+  name: "yankee0one"
+  bio: "Cybersecurity leader specializing in incident response, threat detection, and operations."
   avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
 tags: ["cybersecurity", "AI threats", "identity security", "zero trust"]
 ---
