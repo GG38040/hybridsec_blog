@@ -1,6 +1,6 @@
 ---
 title: "In Progress"
-description: ""
+description: "In Progress"
 pubDate: 
 topic: "space"
 featuredImage: "https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg"
