@@ -5,8 +5,8 @@ pubDate: 2023-06-15
 topic: "science"
 featuredImage: "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
 author:
-  name: "Dr. Alex Chen"
-  bio: "Quantum physics researcher with over 15 years of experience in theoretical and applied quantum mechanics."
+  name: "yankee0one"
+  bio: "Decade of experience watching PBS Space Time on youtube."
   avatar: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg"
 tags: ["quantum computing", "technology", "research"]
 ---
