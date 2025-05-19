@@ -1,0 +1,79 @@
+---
+import Layout from './Layout.astro';
+import PostGrid from '../components/PostGrid.astro';
+import FeaturedPost from '../components/FeaturedPost.astro';
+import SearchBar from '../components/SearchBar.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { getCollection } from 'astro:content';
+
+export interface Props {
+  title: string;
+  topic: string;
+  description: string;
+  heroImage: string;
+}
+
+const { title, topic, description, heroImage } = Astro.props;
+
+// Get posts for this topic
+const allPosts = await getCollection('blog', ({ data }) => {
+  return data.draft !== true && data.topic === topic;
+});
+
+// Sort by date
+const posts = allPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Get the featured post (most recent)
+const featuredPost = posts.length > 0 ? posts[0] : null;
+// Other posts
+const otherPosts = posts.length > 1 ? posts.slice(1) : [];
+---
+
+<Layout title={title} description={description}>
+  <div class="w-full">
+    <!-- Hero Section -->
+    <div class="relative h-80 md:h-96 lg:h-[500px] overflow-hidden">
+      <img 
+        src={heroImage} 
+        alt={title} 
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-primary-500/90 to-primary-500/70 flex items-center">
+        <div class="container mx-auto px-6 md:px-10">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 animate-fade-in">
+            {title}
+          </h1>
+          <p class="text-white text-lg md:text-xl max-w-2xl animate-fade-in-delay">
+            {description}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="mb-12">
+        <SearchBar topic={topic} />
+      </div>
+
+      {featuredPost && (
+        <div class="mb-16">
+          <h2 class="text-2xl font-heading font-bold text-primary-500 dark:text-white mb-8">
+            Featured Article
+          </h2>
+          <FeaturedPost post={featuredPost} />
+        </div>
+      )}
+
+      <div class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-primary-500 dark:text-white mb-8">
+          Latest Articles
+        </h2>
+        <PostGrid posts={otherPosts} />
+      </div>
+
+      <Newsletter />
+    </div>
+  </div>
+</Layout>

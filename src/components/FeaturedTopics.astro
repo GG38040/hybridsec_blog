@@ -1,0 +1,60 @@
+---
+const topics = [
+  {
+    title: "Science",
+    description: "Discoveries and breakthroughs",
+    image: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg",
+    href: "/science"
+  },
+  {
+    title: "Space",
+    description: "Exploration and astronomy",
+    image: "https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg",
+    href: "/space"
+  },
+  {
+    title: "National Security",
+    description: "Geopolitics and defense",
+    image: "https://images.pexels.com/photos/3791667/pexels-photo-3791667.jpeg",
+    href: "/national-security"
+  },
+  {
+    title: "Cyber Security",
+    description: "Digital threats and defense",
+    image: "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg",
+    href: "/cyber-security"
+  },
+  {
+    title: "Hybrid Warfare",
+    description: "Complex conflict strategies",
+    image: "https://images.pexels.com/photos/4507967/pexels-photo-4507967.jpeg",
+    href: "/hybrid-warfare"
+  }
+];
+---
+
+<section>
+  <h2 class="text-3xl font-heading font-bold text-primary-500 dark:text-white mb-8">
+    Featured Topics
+  </h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+    {topics.map(topic => (
+      <a 
+        href={topic.href}
+        class="group relative h-64 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+      >
+        <img 
+          src={topic.image} 
+          alt={topic.title}
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary-500/90 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+          <h3 class="text-xl font-heading font-semibold">{topic.title}</h3>
+          <p class="text-sm text-white/80 mt-1">{topic.description}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>

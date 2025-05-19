@@ -1,0 +1,36 @@
+---
+import PostCard from './PostCard.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  currentTopic: string;
+  currentPostId: string;
+}
+
+const { currentTopic, currentPostId } = Astro.props;
+
+// Get related posts
+const allPosts = await getCollection('blog', ({ data, id }) => {
+  return data.draft !== true && data.topic === currentTopic && id !== currentPostId;
+});
+
+// Sort by date and limit to 3
+const relatedPosts = allPosts
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+{relatedPosts.length > 0 && (
+  <div class="mt-16">
+    <h3 class="text-2xl font-heading font-bold text-primary-500 dark:text-white mb-8">
+      Related Articles
+    </h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {relatedPosts.map(post => (
+        <PostCard post={post} />
+      ))}
+    </div>
+  </div>
+)}

@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import FeaturedTopics from '../components/FeaturedTopics.astro';
+import LatestPosts from '../components/LatestPosts.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { getCollection } from 'astro:content';
+
+// Get all posts
+const allPosts = await getCollection('blog', ({ data }) => {
+  return data.draft !== true;
+});
+
+// Sort by date
+const posts = allPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Get latest 6 posts
+const latestPosts = posts.slice(0, 6);
+---
+
+<Layout title="Professional Blog | Science, Space, Security and More">
+  <HeroSection />
+  
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <FeaturedTopics />
+    
+    <div class="my-16">
+      <h2 class="text-3xl font-heading font-bold text-primary-500 dark:text-white mb-8">
+        Latest Articles
+      </h2>
+      <LatestPosts posts={latestPosts} />
+    </div>
+    
+    <Newsletter />
+  </div>
+</Layout>

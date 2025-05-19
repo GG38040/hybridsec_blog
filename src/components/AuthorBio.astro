@@ -1,0 +1,39 @@
+---
+interface Author {
+  name: string;
+  bio: string;
+  avatar: string;
+}
+
+interface Props {
+  author: Author;
+}
+
+const { author } = Astro.props;
+
+// Default author if none provided
+const defaultAuthor = {
+  name: 'Editorial Team',
+  bio: 'Our team of expert writers brings you the latest insights and analysis on complex topics.',
+  avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg'
+};
+
+const { name, bio, avatar } = author || defaultAuthor;
+---
+
+<div class="flex items-start space-x-4 py-8 border-t border-b border-gray-200 dark:border-gray-800 my-8">
+  <img 
+    src={avatar} 
+    alt={name} 
+    class="w-16 h-16 rounded-full object-cover"
+  />
+  
+  <div>
+    <h3 class="text-lg font-medium text-gray-800 dark:text-white">
+      {name}
+    </h3>
+    <p class="text-gray-600 dark:text-gray-300 mt-1">
+      {bio}
+    </p>
+  </div>
+</div>
