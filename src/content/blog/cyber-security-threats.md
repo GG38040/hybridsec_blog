@@ -6,8 +6,8 @@ topic: "cyber-security"
 featuredImage: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg"
 author:
   name: "yankee0one"
-  bio: "Former CISO and cybersecurity consultant specializing in critical infrastructure protection and threat intelligence."
-  avatar: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg"
+  bio: "Cybersecurity leader with expertise in incident response, threat detection, and cyber defense operations."
+  avatar: "https://github.com/GG38040/GG3Website/blob/master/resumeImages/profile.jpg"
 tags: ["cybersecurity", "cyber threats", "ransomware", "supply chain"]
 ---
 
