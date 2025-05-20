@@ -53,13 +53,13 @@ Sora was then pointed at this **structured knowledge via Wikipedia**, allowing i
 
 Below are 11 generated images using this method. Each one draws from a composite of real-world statements and generative synthesis via Sora:
 
-![UFO Over Mountain Skyline](/images/ufo_0029.png)
+![UFO Over Mountain Skyline](https://github.com/GG38040/hybridsec_blog/blob/main/src/assets/IMG_0046.png)
 *Fig 1: A triangular formation over desert terrain, inspired by Phoenix Lights reports.*
 
-![Nighttime Hover Encounter](/images/ufo_0033.png)
+![Nighttime Hover Encounter](https://github.com/GG38040/hybridsec_blog/blob/main/src/assets/IMG_0029.png)
 *Fig 2: Recreating the 1976 Tehran encounter’s high-altitude glow.*
 
-![Sudden Sky Intrusion](/images/ufo_0035.png)
+![Sudden Sky Intrusion](https://github.com/GG38040/hybridsec_blog/blob/main/src/assets/IMG_0045.png)
 *Fig 3: Witness statements suggested rapid entry and silence.*
 
 
