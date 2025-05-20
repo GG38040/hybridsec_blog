@@ -56,7 +56,7 @@ Below are 11 generated images using this method. Each one draws from a composite
 ![UFO Over Mountain Skyline](https://github.com/GG38040/hybridsec_blog/blob/main/src/assets/IMG_0046.png)
 *Fig 1: A triangular formation over desert terrain, inspired by Phoenix Lights reports.*
 
-![Nighttime Hover Encounter](https://github.com/GG38040/hybridsec_blog/blob/main/src/assets/IMG_0029.png)
+![Nighttime Hover Encounter](https://github.com/GG38040/hybridsec_blog/blob/main/src/assets/IMG_0029.jpg)
 *Fig 2: Recreating the 1976 Tehran encounter’s high-altitude glow.*
 
 ![Sudden Sky Intrusion](https://github.com/GG38040/hybridsec_blog/blob/main/src/assets/IMG_0045.png)
