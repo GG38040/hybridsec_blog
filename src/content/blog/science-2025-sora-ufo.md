@@ -51,7 +51,7 @@ Sora was then pointed at this **structured knowledge via Wikipedia**, allowing i
 
 ## Step 3: Visualize the Results
 
-Below are 11 generated images using this method. Each one draws from a composite of real-world statements and generative synthesis via Sora:
+Below are several generated images using this method. Each one draws from a composite of real-world statements and generative synthesis via Sora:
 
 ![UFO Over Mountain Skyline](https://live.staticflickr.com/65535/54532318952_72e2035791_b.jpg)
 *Fig 1: A triangular formation over desert terrain, inspired by Phoenix Lights reports.*
