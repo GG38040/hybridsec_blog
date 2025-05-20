@@ -56,10 +56,10 @@ Below are 11 generated images using this method. Each one draws from a composite
 ![UFO Over Mountain Skyline](https://live.staticflickr.com/65535/54532318952_72e2035791_b.jpg)
 *Fig 1: A triangular formation over desert terrain, inspired by Phoenix Lights reports.*
 
-![Nighttime Hover Encounter]("https://live.staticflickr.com/65535/54532443177_2bdc160f41_b.jpg")
+![Nighttime Hover Encounter](https://live.staticflickr.com/65535/54532443177_2bdc160f41_b.jpg)
 *Fig 2: Recreating the 1976 Tehran encounter’s high-altitude glow.*
 
-![Sudden Sky Intrusion]("https://live.staticflickr.com/65535/54533385924_4670348ec9_b.jpg")
+![Sudden Sky Intrusion](https://live.staticflickr.com/65535/54533385924_4670348ec9_b.jpg)
 *Fig 3: Witness statements suggested rapid entry and silence.*
 
 
