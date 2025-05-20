@@ -1,9 +1,15 @@
 ---
-title: Reconstructing UFO Sightings with Sora and Generative AI
-date: 2025-05-20
-author: HybridSec Team
-categories: [AI, Open Source Intelligence, Space Anomalies]
-image: /images/ufo_cover.png
+title: "Reconstructing UFO Sightings with Sora and Generative AI"
+description: "Using AI to UFO sightings from witness reports"
+pubDate: 2025-05-20
+topic: "science"
+author: "yankee0one"
+featuredImage: 
+author:
+  name: "yankee0one"
+  bio: "Decade of experience watching PBS Space Time on youtube."
+  avatar: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg"
+tags: ["AI", "Open Source Intelligence", "Space Anomalies"]
 ---
 
 > _"The truth is out there… and so is the data."_  
