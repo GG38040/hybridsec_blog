@@ -3,7 +3,6 @@ title: "Reconstructing UFO Sightings with Sora and Generative AI"
 description: "Using AI to recreate UFO sightings from witness reports"
 pubDate: 2025-05-20
 topic: "science"
-author: "yankee0one"
 featuredImage: "https://images.pexels.com/photos/1434608/pexels-photo-1434608.jpeg"
 author:
   name: "yankee0one"
@@ -11,7 +10,6 @@ author:
   avatar: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg"
 tags: ["AI", "Open Source Intelligence", "Space Anomalies"]
 ---
-
 
 
 ## Introduction
