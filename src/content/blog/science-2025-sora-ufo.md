@@ -12,8 +12,6 @@ author:
 tags: ["AI", "Open Source Intelligence", "Space Anomalies"]
 ---
 
-> _"The truth is out there… and so is the data."_  
-> — HybridSec
 
 
 ## Introduction
