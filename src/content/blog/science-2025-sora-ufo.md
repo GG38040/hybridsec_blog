@@ -55,38 +55,6 @@ Sora was then pointed at this **structured knowledge via Wikipedia**, allowing i
 
 Below are 11 generated images using this method. Each one draws from a composite of real-world statements and generative synthesis via Sora:
 
-![UFO Over Mountain Skyline](/images/ufo_0029.png)
-*Fig 1: A triangular formation over desert terrain, inspired by Phoenix Lights reports.*
-
-![Nighttime Hover Encounter](/images/ufo_0033.png)
-*Fig 2: Recreating the 1976 Tehran encounter’s high-altitude glow.*
-
-![Sudden Sky Intrusion](/images/ufo_0035.png)
-*Fig 3: Witness statements suggested rapid entry and silence.*
-
-![Layered Object View](/images/ufo_0036.png)
-*Fig 4: Object with distinct upper and lower light sections.*
-
-![Hovering Over Suburbs](/images/ufo_0037.png)
-*Fig 5: Wide craft blocking out stars as seen from civilian locations.*
-
-![Perspective From Backyard](/images/ufo_0039.png)
-*Fig 6: View from behind a fence—matching witness angles.*
-
-![Urban Close Encounter](/images/ufo_0040.png)
-*Fig 7: Urban glow surrounding a floating anomaly.*
-
-![Atmospheric Entry Glow](/images/ufo_0043.png)
-*Fig 8: Bright corona effect mentioned in the USS Nimitz incident.*
-
-![Flash and Retreat](/images/ufo_0044.png)
-*Fig 9: Sudden appearance, often followed by high-speed retreat.*
-
-![Multiple Craft Formation](/images/ufo_0046.png)
-*Fig 10: Military reports of craft splitting into smaller units.*
-
-![Starlight Obscured](/images/ufo_0048.png)
-*Fig 11: V-shaped silhouette blocking out the Milky Way.*
 
 ---
 
