@@ -13,9 +13,6 @@ tags: ["hybrid warfare", "climate", "authoritarianism", "data analysis"]
 
 # Climate Pressure and the Rise of Authoritarianism
 
-> _"Authoritarianism thrives in crisis — and the climate crisis is no exception."_  
-> — HybridSec
-
 In this new blog series, HybridSec explores one of the most urgent and underexamined dynamics of the 21st century: the correlation between escalating climate disruption and the global resurgence of authoritarianism. This isn't speculative — it's visible in economic stress, political backlash, and centralized power responses to instability.
 
 ## The Hypothesis
