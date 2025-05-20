@@ -2,7 +2,7 @@
 title: "Geopolitics in 2025: Fragmented Alliances and Security in Flux"
 description: "A 2025 perspective on the rapidly evolving geopolitical order, driven by tech rivalries, regional assertiveness, and new security paradigms."
 pubDate: 2025-05-19
-topic: "hybrid-warfare"
+topic: "national-security"
 featuredImage: "https://images.pexels.com/photos/4666753/pexels-photo-4666753.jpeg"
 author:
   name: "yankee0one"
