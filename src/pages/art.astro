@@ -1,25 +1,98 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import img1 from '../assets/IMG_art01.png';
-import img2 from '../assets/IMG_art02.png';
-import img3 from '../assets/IMG_art03.png';
-import img4 from '../assets/IMG_art04.png';
-import img5 from '../assets/IMG_art05.png';
-import img6 from '../assets/IMG_art06.png';
-import img7 from '../assets/IMG_art07.png';
+import Layout from "../layouts/Layout.astro";
+import img1 from "../assets/IMG_art01.png";
+import img2 from "../assets/IMG_art02.png";
+import img3 from "../assets/IMG_art03.png";
+import img4 from "../assets/IMG_art04.png";
+import img5 from "../assets/IMG_art05.png";
+import img6 from "../assets/IMG_art06.png";
+import img7 from "../assets/IMG_art07.png";
+import img8 from "../assets/IMG_art08.png";
 
-const images = [img1, img2, img3, img4, img5, img6, img7];
+// Import AI-generated art
+import sora1 from "../assets/IMG_sora_art01.png";
+import sora2 from "../assets/IMG_sora_art02.png";
+import sora3 from "../assets/IMG_sora_art03.png";
+import sora4 from "../assets/IMG_sora_art04.png";
+import sora5 from "../assets/IMG_sora_art05.png";
+import sora6 from "../assets/IMG_sora_art06.png";
+import sora7 from "../assets/IMG_sora_art07.png";
+import sora8 from "../assets/IMG_sora_art08.png";
+import sora9 from "../assets/IMG_sora_art09.png";
+import sora10 from "../assets/IMG_sora_art10.png";
+import sora11 from "../assets/IMG_sora_art11.png";
+import sora12 from "../assets/IMG_sora_art12.png";
+// Add more imports as needed
+
+const soloHumanArt = [
+  { src: img1.src, alt: "Solo Human Artwork 1" },
+  { src: img2.src, alt: "Solo Human Artwork 2" },
+  { src: img3.src, alt: "Solo Human Artwork 3" },
+  { src: img4.src, alt: "Solo Human Artwork 4" },
+  { src: img5.src, alt: "Solo Human Artwork 5" },
+  { src: img6.src, alt: "Solo Human Artwork 6" },
+  { src: img7.src, alt: "Solo Human Artwork 7" },
+  { src: img8.src, alt: "Solo Human Artwork 8" },
+  // Add more as needed
+];
+
+const aiCollabArt = [
+  { src: sora1.src, alt: "Human + Sora AI Collaboration Artwork 1" },
+  { src: sora2.src, alt: "Human + Sora AI Collaboration Artwork 2" },
+  { src: sora3.src, alt: "Human + Sora AI Collaboration Artwork 3" },
+  { src: sora4.src, alt: "Human + Sora AI Collaboration Artwork 4" },
+  { src: sora5.src, alt: "Human + Sora AI Collaboration Artwork 5" },
+  { src: sora6.src, alt: "Human + Sora AI Collaboration Artwork 6" },
+  { src: sora7.src, alt: "Human + Sora AI Collaboration Artwork 7" },
+  { src: sora8.src, alt: "Human + Sora AI Collaboration Artwork 8" },
+  { src: sora9.src, alt: "Human + Sora AI Collaboration Artwork 9" },
+  { src: sora10.src, alt: "Human + Sora AI Collaboration Artwork 10" },
+  { src: sora11.src, alt: "Human + Sora AI Collaboration Artwork 11" },
+  { src: sora12.src, alt: "Human + Sora AI Collaboration Artwork 12" },
+  // Add more as needed
+];
 ---
 
 <Layout title="Art Gallery">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <h1 class="text-3xl font-heading font-bold text-primary-500 dark:text-white mb-8">
+    <h1
+      class="text-3xl font-heading font-bold text-primary-500 dark:text-white mb-8"
+    >
       Art Gallery
     </h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      {images.map(img => (
-        <img src={img.src} alt="Artwork" class="rounded-lg shadow-md" />
-      ))}
-    </div>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Solo Human Art</h2>
+      <p class="mb-6 text-gray-600 dark:text-gray-300">
+        All works in this section are created solely by the artist, without AI
+        assistance.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {
+          soloHumanArt.map((img) => (
+            <img src={img.src} alt={img.alt} class="rounded-lg shadow-md" />
+          ))
+        }
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Human + Sora AI Collaboration Art</h2>
+      <p class="mb-6 text-gray-600 dark:text-gray-300">
+        These pieces are created through collaboration between the artist and
+        Sora AI.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {
+          aiCollabArt.map((img) => (
+            <img
+              src={img.src}
+              alt={img.alt}
+              class="rounded-lg shadow-md border-2 border-blue-400"
+            />
+          ))
+        }
+      </div>
+    </section>
   </div>
 </Layout>
