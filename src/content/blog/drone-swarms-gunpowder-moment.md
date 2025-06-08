@@ -35,6 +35,8 @@ Let's place drone swarms in historical context:
 | 20th Century | Tanks, aircraft, nukes | Combined arms & MAD | Electronics & precision warfare |
 | **21st Century** | **Autonomous drones** | Dispersed, networked nodes | **AI + Swarm logic** |
 
+![Infographic illustrating the evolution of warfare](../../assets/warfare_evolution_infographic.png)
+
 Each shift rendered previous tactics obsolete. Cannons demolished castles. Rifles out-ranged spears. Nuclear deterrence restructured geopolitics. Drone swarms now threaten to upend traditional force structures the same way.
 
 ---
