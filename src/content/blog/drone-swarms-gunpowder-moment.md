@@ -2,12 +2,12 @@
 title: "Drone Swarms: The New Gunpowder Moment in Warfare"
 description: "Autonomous drones aren't just a new weapon—they mark a fundamental shift in the nature of war. Like gunpowder, they are decentralizing power and rewriting military logic."
 pubDate: 2025-06-08
-topic: "hybrid-warfare"
+topic: "national-security"
 featuredImage: https://images.pexels.com/photos/5804920/pexels-photo-5804920.jpeg
 author:
   name: "yankee0one"
-  bio: "Decade of experience watching PBS Space Time on YouTube."
-  avatar: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg"
+  bio: "Former documentary junky turned pilot, turned sailor, turned cyborg"
+  avatar: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg"
 tags: ["Drone Warfare", "Hybrid Conflict", "AI", "Tactical Evolution", "Defense Tech"]
 ---
 
