@@ -1,4 +1,3 @@
-
 ---
 title: "Human-AI Collaboration: Merging Intuition with Emergent Intelligence"
 description: "Unlocking original thought and innovation by integrating human evolutionary intuition with generative AI capabilities."
