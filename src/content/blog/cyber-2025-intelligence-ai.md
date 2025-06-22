@@ -1,17 +1,16 @@
 
 ---
-
 title: "Human-AI Collaboration: Merging Intuition with Emergent Intelligence"
 description: "Unlocking original thought and innovation by integrating human evolutionary intuition with generative AI capabilities."
 pubDate: 2025-06-22
 topic: "cyber-security"
 featuredImage: "[https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg](https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg)"
 author:
-  name: "yankee0one"
-  bio: "Cybersecurity leader specializing in incident response, threat detection, and operations."
-  avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
+    name: "yankee0one"
+    bio: "Cybersecurity leader specializing in incident response, threat detection, and operations."
+    avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
 tags: ["AI Collaboration", "Generative AI", "Cybersecurity", "Human-AI Interaction", "Innovation"]
----------------------------------------------------------------------------------------------------
+---
 
 > *“Humans and AI, working together, can achieve what neither can alone.”*
 
