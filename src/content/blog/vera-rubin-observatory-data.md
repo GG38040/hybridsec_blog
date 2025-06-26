@@ -3,7 +3,7 @@ title: "Unlocking the Cosmos with the Vera Rubin Observatory"
 description: "How to access LSST data releases and explore cosmic anomalies through the Rubin Science Platform."
 pubDate: 2025-07-21
 topic: "space"
-featuredImage: "https://images.pexels.com/photos/2694034/pexels-photo-2694034.jpeg"
+featuredImage: "https://tse3.mm.bing.net/th?id=OIP.7J2DsOQGU47970jZ8PrQ3AHaHa&pid=Api"
 author:
   name: "yankee0one"
   bio: "Decade of experience watching PBS Space Time on youtube."
