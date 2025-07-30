@@ -2,7 +2,7 @@
 title: "Piercing the Fog: Leading Through Fear, Uncertainty, and Doubt in a Cyber Crisis"
 description: "Drawing from battlefield leadership and incident response, this post explores how to cut through fear, uncertainty, and doubt (FUD) and lead decisively during a cyber crisis."
 pubDate: 2025-07-29
-topic: "cybersecurity"
+topic: "cyber-security"
 featuredImage: "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg"
 author:
   name: "yankee0one"
