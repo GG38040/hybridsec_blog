@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 32" fill="none">
+  <text x="0" y="24" font-family="Montserrat, sans-serif" font-size="24" font-weight="700" fill="#0A1128">Hybridsec</text>
+  <style>
+    @media (prefers-color-scheme: dark) { text { fill: #FFF; } }
+  </style>
+</svg>
