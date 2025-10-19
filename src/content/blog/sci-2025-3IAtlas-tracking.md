@@ -1,133 +1,69 @@
 ---
 title: "3I/ATLAS (C/2025 N1): Living Evidence Log & Analytic Brief"
-description: "A living evidence log and analyst brief on the interstellar object 3I/ATLAS (C/2025 N1): early H₂O/OH at >3 au, a CO₂-rich extended coma, Ni I without Fe I in some spectra, and a near-term collection plan through perihelion."
+description: "A research-grade, continuously maintained account of the interstellar object 3I/ATLAS (C/2025 N1), synthesizing multi-wavelength observations, quantitative findings, and near-term priorities around perihelion."
 pubDate: 2025-10-18
-topic: "science"
+topic: "space"
 featuredImage: "https://images.pexels.com/photos/4858277/pexels-photo-4858277.jpeg"
 author:
-  name: "HybridSec Science Persona"
-  bio: "HybridSec Research collective. Evidence-first, instrument-aware comet science & space intel."
+  name: "yankee0one"
+  bio: "Decade of experience watching PBS Space Time"
   avatar: "https://images.pexels.com/photos/7170706/pexels-photo-7170706.jpeg"
 tags: ["3I/ATLAS", "C/2025 N1", "interstellar object", "comet", "CO₂ coma", "OH emission", "Ni I lines", "spectroscopy", "astronomy"]
-# Optional gallery for theming (safe to remove if your site doesn't use it):
-altImages:
-  - "https://images.pexels.com/photos/33463037/pexels-photo-33463037.jpeg"   # Milky Way starfield (background option)
-  - "https://images.pexels.com/photos/2928587/pexels-photo-2928587.jpeg"    # Observatory exterior (instrument/theme option)
 ---
 
+# Abstract
 
-# Executive Summary (Analyst Brief)
+3I/ATLAS (C/2025 N1) is the third confirmed interstellar visitor to the Solar System and the first to present a combination of early water activity beyond 3 au, a spatially extended and CO₂-rich coma, and high-resolution optical spectra reporting Ni I emission without a corresponding Fe I detection in some epochs. This living evidence log consolidates primary observations—dates, instruments, geometric parameters, detections, and production rates—and interprets them conservatively against established coma models and instrumental constraints. The pre-perihelion record supports a working classification of a volatile-rich interstellar comet whose chemistry and dust environment differ in instructive ways from 1I/ʻOumuamua and 2I/Borisov. Perihelion in late October 2025 offers a decisive window to test the stability of CO₂/H₂O ratios, to probe the mechanism of Ni release, and to compare species-dependent spatial profiles at higher signal-to-noise.
 
-**Key Judgments (as of 2025-10-18)**  
-- **3I/ATLAS is a volatile-rich interstellar comet** showing **early H₂O/OH activity beyond 3 au** and a **prominent, spatially extended CO₂ coma**. *(High confidence)*  
-- **Optical high-dispersion spectra report Ni I emission without Fe I detection** in multiple epochs/instruments; current explanations are **natural** (gas-phase release and/or carbonyl chemistry in CO-rich environments). *(Moderate confidence)*  
-- **Perihelion (~2025-10-29/30 at ~1.4 au)** provides a decisive window to track **evolution of CO₂/H₂O**, **Fe searches**, and **species-dependent spatial profiles** (e.g., Ni vs CN) to constrain coma chemistry and parentage. *(High confidence)*
+# 1. Introduction
 
-**Bottom Line Up Front (BLUF).** Cross-band detections from UV–IR, combined with IFU mapping, support a working classification of **volatile-rich interstellar comet** with **CO₂-enhanced activity** and **early water production**, plus **unusual but natural metal-line behavior**; near-perihelion monitoring is the critical test for abundance ratios and Fe limits.
+The discovery of 3I/ATLAS by the ATLAS survey on 1 July 2025 and its subsequent confirmation by the Minor Planet Center add a third anchor point to the emerging taxonomy of interstellar small bodies. ʻOumuamua, largely inactive, forced a reappraisal of non-gravitational forces and outgassing physics in low-activity regimes; Borisov, by contrast, resembled a classical comet with strong CO, providing a familiar benchmark with an interstellar provenance. 3I/ATLAS does not map cleanly onto either precedent. The object exhibits water-related emission at unexpectedly large heliocentric distances, conspicuous CO₂ signatures with substantial spatial extent, and a metal-line pattern that has so far resisted the simplest solar-system analogies. Those features are not merely curiosities: they bear directly on the storage and release of volatiles in extrasolar planetesimals and on the thermal and chemical histories those bodies experienced before ejection.
 
----
+# 2. Sources, Methods, and Curation
 
-# 1. Background & Context
+This review privileges primary sources: Minor Planet Electronic Circulars; instrument and mission pages; preprints; and peer-reviewed articles. For each entry we record the UT midpoint, the observing facility and instrument, the stated geometry (heliocentric distance, observer distance, and phase angle when available), the observables targeted, and any quantitative results with uncertainties. Where production rates depend on modeling choices—Haser-style coma representations, fluorescence efficiencies, or reddening assumptions—we preserve the authors’ conventions and flag the principal caveats. The log is append-only: corrections or refined reductions appear as new rows with explicit dates, while the Changelog documents editorial actions.
 
-**Designation.** 3I/ATLAS = C/2025 N1, discovered **2025-07-01** by ATLAS-Chile; later confirmed by the Minor Planet Center.  
-**Comparative frame.** **1I/ʻOumuamua** (largely inactive); **2I/Borisov** (classically cometary; strong CO). **3I/ATLAS** differs via **CO₂ prominence**, **early H₂O signatures**, and **Ni I without Fe I** in some spectra, offering fresh constraints on **extrasolar volatile storage** and **planetesimal processing**.
+# 3. Observational Record to Date
 
----
+The campaign has spanned ultraviolet, infrared, and optical regimes. Swift/UVOT reports OH emission at 3085 Å at a heliocentric distance of roughly 3.5 au, yielding a water production rate on the order of 1.35×10²⁷ s⁻¹ with uncertainties at the few-tenths level [4]. JWST/NIRSpec identifies CO₂, CO, and H₂O in both solid and gaseous phases and notes a comparatively high CO₂/H₂O environment, with detailed ratios reserved for forthcoming manuscripts [5]. SPHEREx resolves an extended CO₂ coma with a radius of at least 3.48×10⁵ km and infers Q(CO₂) ≈ 9.4×10²⁶ s⁻¹, alongside upper limits for H₂O and CO consistent with its spectral coverage and sensitivity [6]. On the optical side, VLT/X-shooter and UVES report numerous Ni I lines while setting upper limits on Fe I at comparable epochs and geometries; the reported dust continuum slope of approximately 21–22% per 1000 Å indicates a reddened, dust-rich coma typical of active comets but with noteworthy spectral detail [7,8]. Keck/KCWI integral-field mapping suggests that Ni emission is more centrally concentrated than CN and exhibits a shorter e-folding radius, a pattern that implies species with distinct parent lifetimes or release pathways [9]. Ephemerides compiled by NASA place perihelion on 29–30 October 2025 at roughly 1.4 au, with Earth at distances that preclude any hazard [2,3].
 
-# 2. Sources & Methods (Curation Policy)
-
-- **Source hierarchy.** Primary technical artifacts (MPECs, mission/instrument pages, preprints, peer-reviewed papers) take precedence over secondary media.  
-- **Data model.** Each record captures **UT date (midpoint)**, **facility/instrument**, **geometry** (*r⊙*, Δ, phase angle if stated), **observable(s)**, **quantitative result(s)** with uncertainties, **notes**, and **reference**.  
-- **Quantification.** We retain authors’ production rates and assumptions (e.g., Haser coma models, fluorescence efficiencies, reddening) and note caveats.  
-- **Versioning.** Entries are **append-only**; updates appear as new rows. See **Changelog**.
-
----
-
-# 3. Current Operating Picture (2025-10-18)
-
-- **Orbit & geometry.** Interstellar, hyperbolic; **perihelion ~2025-10-29/30**, *r⊙* ≈ **1.4 au**; Earth distance ≳ **1.8 au** during perihelion; **no hazard** indicated.  
-- **Working classification.** **Volatile-rich interstellar comet** with **CO₂-rich coma**, **water detected beyond 3 au**, and **Ni I without Fe I** in some optical spectra.  
-- **Collection posture.** Ongoing **Swift/UVOT**, **JWST/NIRSpec**, **SPHEREx**, **IRTF**, **VLT**, **Keck** coverage; time-series through **Nov–Dec 2025** prioritized.
-
----
-
-# 4. Evidence Log (Chronological, Research-Grade)
-
-> **Fields:** Date (UT midpoint) · Facility/Instrument · Geometry (as stated by source) · Observable(s) · Quantitative Result(s) · Notes · Ref.
+For convenience, the principal detections and reductions are retained in tabular form below. Geometry is quoted as reported by the originating teams; where sources provide a range, the midpoint is tabulated.
 
 | Date (UT) | Facility / Instrument | Geometry | Observable(s) | Quantitative Result(s) | Notes | Ref. |
 |---|---|---|---|---|---|---|
-| **2025-07-01** | ATLAS (W68, Chile) | Discovery | Astrometry/photometry | — | Interstellar candidate flagged; follow-up led to MPC confirmation as **3I/ATLAS = C/2025 N1**. | [1] |
-| **2025-07-31 → 08-01** | **Swift/UVOT** | *r⊙* ≈ **3.51 au** | OH (3085 Å) → H₂O | **Q(H₂O) = (1.35 ± 0.27) × 10²⁷ s⁻¹** (~40 kg s⁻¹) | Water activity detected beyond 3 au; plausible large icy-grain contribution. | [4] |
-| **2025-08-06** | **JWST / NIRSpec** | *r⊙* ≈ **3.3–3.4 au** | IR spectral features | CO₂, CO, and H₂O (solid+gas) identified; **high CO₂/H₂O** ratio indicated | Detailed ratios pending manuscripts; early campaign note. | [5] |
-| **Mid-Aug 2025** | **SPHEREx** (+ IRTF ancillary) | *r⊙* ≈ **3.1–3.2 au** | CO₂ coma; H₂O-ice absorption | **Q(CO₂) ≈ 9.4 × 10²⁶ s⁻¹**; coma radius **≥ 3.48 × 10⁵ km**; strong H₂O-ice absorption; **3σ** limits: Q(H₂O) ≲ 1.5×10²⁶ s⁻¹, Q(CO) ≲ 2.8×10²⁶ s⁻¹ | Continuum dominated by dust coma; nucleus contribution likely small; no obvious jets in SPHEREx imaging. | [6] |
-| **2025-08-21 → 08-25** | **VLT / X-shooter, UVES** | *r⊙* ≈ **2.8–2.9 au** | Optical spectra: CN; **Ni I** (no Fe I) | CN at low level; **numerous Ni I lines; Fe I not detected**; dust continuum slope ~**21–22% / 10³ Å** | Authors explore natural gas-phase Ni release pathways; Fe I upper limits set. | [7,8] |
-| **2025-08-24** | **Keck II / KCWI (IFU)** | *r⊙* ≈ **2.75 au** | Spatial line mapping (CN, Ni) | **Ni emission more centrally concentrated** than CN; Ni e-folding radius **~200 km shorter** | Suggests distinct parentage/lifetimes for Ni vs CN. | [9] |
-| **Sep–Oct 2025** | **NASA overviews** | Campaign | Ephemerides/visibility | Perihelion ~**Oct 29–30**; Earth distance ≳ **1.8 au**; no hazard | Public-facing geometry and figures. | [2,3] |
+| 2025-07-01 | ATLAS (W68, Chile) | Discovery | Astrometry/photometry | — | Interstellar candidate; MPC confirms 3I/ATLAS = C/2025 N1. | [1] |
+| 2025-07-31 to 08-01 | Swift/UVOT | r⊙ ≈ 3.51 au | OH (3085 Å) → H₂O | Q(H₂O) = (1.35 ± 0.27) × 10²⁷ s⁻¹ | Early water activity beyond 3 au, plausibly supported by large icy grains. | [4] |
+| 2025-08-06 | JWST / NIRSpec | r⊙ ≈ 3.3–3.4 au | IR features | CO₂, CO, H₂O (solid+gas); high CO₂/H₂O indicated | Detailed ratios pending manuscript. | [5] |
+| Mid-Aug 2025 | SPHEREx (+ IRTF) | r⊙ ≈ 3.1–3.2 au | CO₂ coma; H₂O-ice absorption | Q(CO₂) ≈ 9.4×10²⁶ s⁻¹; coma radius ≥ 3.48×10⁵ km; 3σ limits: Q(H₂O) ≲ 1.5×10²⁶ s⁻¹, Q(CO) ≲ 2.8×10²⁶ s⁻¹ | Continuum dominated by dust; no obvious jets in SPHEREx imaging. | [6] |
+| 2025-08-21 to 08-25 | VLT / X-shooter, UVES | r⊙ ≈ 2.8–2.9 au | Optical spectra | CN; numerous Ni I; Fe I not detected; continuum slope ~21–22%/10³ Å | Natural Ni release mechanisms discussed; Fe upper limits set. | [7,8] |
+| 2025-08-24 | Keck II / KCWI (IFU) | r⊙ ≈ 2.75 au | Spatial mapping | Ni more centrally concentrated than CN; Ni e-folding radius shorter by ~200 km | Species-dependent parentage and lifetimes inferred. | [9] |
+| Sep–Oct 2025 | NASA overviews | Campaign | Ephemerides/visibility | Perihelion 29–30 Oct; Earth distance ≳ 1.8 au | No hazard indicated. | [2,3] |
 
-*Geometry values follow the cited sources; ranges listed as mid-ranges where appropriate.*
+# 4. Results and Interpretation
 
----
+Taken together, the detections argue for a volatile-rich interstellar comet with a coma dominated by CO₂ and dust, yet capable of sustaining water-related emission at heliocentric distances that, for many solar-system comets, would produce low activity. The Swift-derived water production rate at roughly 3.5 au falls within the upper envelope of comparable measurements and suggests that large icy grains or clumps are contributing to the OH signal by sublimating at distances where nucleus-only sublimation would be muted [4]. The SPHEREx-resolved CO₂ coma, both in its spatial scale and inferred production rate, presents an environment in which CO₂ is not a minor participant but a controlling species. The JWST indications of a high CO₂/H₂O ratio are consistent with that picture, although firm abundance ratios await publication of instrument-specific modeling assumptions [5,6].
 
-# 5. Analytic Synthesis
+The metal-line detections pose a more nuanced question. Independent VLT datasets report numerous Ni I lines and set upper limits on Fe I at comparable epochs. There is, to date, no requirement to invoke non-natural explanations: nickel can be released through gas-phase processes, possibly involving carbonyl chemistry in CO-rich environments, and differential sputtering or grain-surface processes could plausibly favor Ni over Fe in the observable phase. The Keck/KCWI spatial mapping strengthens the case for species-dependent lifetimes and release pathways by demonstrating a more compact Ni distribution than CN with a shorter e-folding radius [7–9]. Further high-dispersion work around perihelion should be able to confirm whether Fe remains suppressed or simply under the detection threshold of current integrations.
 
-1. **Early water activity at large distance.** **Swift/UVOT** detects **OH (→ H₂O)** at *r⊙* ≈ **3.5 au** with **Q(H₂O) ≈ 1.35×10²⁷ s⁻¹**—placing 3I/ATLAS among a small set of comets with robust water signatures >3 au, consistent with **large icy-grain release** into the coma. *(High confidence; [4])*  
-2. **CO₂ prominence and spatial extent.** **SPHEREx** resolves an **extended CO₂ coma** (≥ **3.48×10⁵ km**) with **Q(CO₂) ≈ 9.4×10²⁶ s⁻¹**; **JWST/NIRSpec** notes **high CO₂/H₂O** consistent with CO₂-favorable storage conditions in the natal system and/or surface processing. *(High confidence; [5,6])*  
-3. **Metal-line behavior appears unusual but natural.** Multiple optical datasets show **Ni I without Fe I**. Proposed natural mechanisms include **gas-phase nickel release** and/or **carbonyl chemistry** under CO-rich conditions; **no peer-reviewed evidence** requires non-natural/technosignature explanations. *(Moderate confidence; [7,8])*  
-4. **Species-dependent spatial physics.** **Keck/KCWI** indicates **Ni more centrally concentrated** than CN with a **shorter e-folding radius**, implying **distinct parent lifetimes and release mechanisms**—a discriminator for **coma chemistry** models. *(Moderate-to-high confidence; [9])*
+# 5. Implications
 
----
+If sustained, the observed chemistry favors formation or long-term storage of volatiles near CO₂ stability regimes in the parent system, with subsequent processing that preserved CO₂ to heliocentric distances where it remains active. The early water activity suggests that the coma may be seeded by icy grains liberated from the surface or sub-surface, offering a probe of grain size distributions and cohesion in an interstellar context. The Ni-rich, Fe-poor optical signature—should it persist—would expand the known diversity of metal-line environments in comets and, by extension, the range of mineralogical and chemical pathways available in planetesimal evolution beyond the Solar System.
 
-# 6. Confidence, Assumptions & Caveats
+# 6. Outlook: Perihelion and After
 
-- **Confidence language.** We use IC standard qualifiers (High/Moderate/Low) reflecting **source reliability**, **corroboration**, **methodological transparency**, and **collection diversity**.  
-- **Model dependencies.** Production rates/ratios depend on **coma models**, **fluorescence efficiencies**, **phase functions**, and **reddening**; quoted values track authors’ assumptions.  
-- **Separation of fact vs inference.** Detections (e.g., **Ni I**, **OH**) are distinct from interpretations (e.g., **parent chemistry**, **grain dynamics**). We label both explicitly.
+Perihelion in late October 2025 is the critical inflection point. Time-series spectroscopy with JWST, SPHEREx, IRTF, and large-aperture ground facilities can establish whether the CO₂/H₂O ratio remains stable as insolation increases or whether it evolves toward a more water-dominated regime. High-dispersion optical observations with VLT and Keck can deepen the search for Fe I, refine line ratios, and measure velocity widths that discriminate between competing release mechanisms. Additional IFU mapping can exploit favorable geometry to compare the spatial behavior of Ni, CN, and other tracers, while coordinated photometry and polarimetry can track dust color slopes and grain-size evolution across changing phase angles. Collectively, these efforts will determine whether 3I/ATLAS is an outlier or an early representative of a broader interstellar population with CO₂-forward chemistry.
 
----
+# 7. Data Availability and Versioning
 
-# 7. Indicators to Watch (Perihelion & Post-Perihelion)
+All quantitative values reported here are taken from the cited primary sources. Upon stable publication of instrument-team tables, we will mirror those data as CSV files under `/data/` and provide reproducible notebooks in `/notebooks/` that generate derived figures stored in `/figures/`. The evidence log is append-only; revisions appear as dated rows with a brief editorial note. The Changelog records document-level edits.
 
-- **CO₂/H₂O ratio time-series**: stability vs divergence as heating increases. *(JWST/NIRSpec, SPHEREx, IRTF)*  
-- **Searches for Fe I and metal-line ratios**: confirm persistence/limits; velocity widths as diagnostics of release pathways. *(VLT/UVES, Keck/HIRES)*  
-- **Spatial profiles across species** (Ni, CN, C₂, [OI] 5577): parentage and lifetimes via IFU mapping. *(KCWI/MUSE)*  
-- **Dust morphology** (anti-tail, jets/fans), **phase-angle evolution**, and **polarimetry** for grain size/composition constraints.
+# 8. Changelog
 
----
+**2025-10-18** — Initial analyst-grade compilation (Swift, SPHEREx, JWST, VLT, Keck) with narrative synthesis and research-grade table.
 
-# 8. Collection Plan (Tasking Priorities)
+# 9. Acknowledgments
 
-1. **High-cadence IR spectroscopy (perihelion ±15 days)** to track **CO₂/H₂O** and search for **CO** variability.  
-2. **High-dispersion optical** across **Ni I/Fe I windows** with deep integrations to push Fe upper limits and line-ratio diagnostics.  
-3. **IFU mapping** (≥2 epochs) to compare **e-folding radii** for Ni, CN, and continuum, constraining **parent lifetimes**.  
-4. **Coordinated photometry + polarimetry** to monitor **dust color slopes** and **grain size evolution**.
-
----
-
-# 9. Changelog
-
-- **2025-10-18** — Initial analyst-grade log compiled (Swift, SPHEREx, JWST, VLT, Keck) with IC-style framing.
-
----
-
-# 10. Data & Reproducibility
-
-- On stable publication of instrument-team tables, we will mirror numeric values to **`/data/`** (CSV) and provide notebooks in **`/notebooks/`** for derived plots (e.g., **CO₂ coma radius vs epoch**, **Q-ratios over time**).  
-- Figures generated from these notebooks will be saved under **`/figures/`** with full parameter provenance.
-
----
-
-# 11. Acknowledgments
-
-We acknowledge **ATLAS**, **Swift/UVOT**, **JWST/NIRSpec**, **SPHEREx**, **VLT (X-shooter/UVES)**, **Keck/KCWI**, and the **Minor Planet Center** for rapid dissemination of data and designations.
-
----
-
-# 12. Conflicts of Interest
-
-None declared.
-
----
+We acknowledge the teams operating ATLAS, Swift/UVOT, JWST/NIRSpec, SPHEREx, VLT (X-shooter/UVES), and Keck/KCWI, and the Minor Planet Center for rapid dissemination of astrometry and designations.
 
 # References
 
