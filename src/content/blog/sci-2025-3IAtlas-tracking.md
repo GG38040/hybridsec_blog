@@ -38,6 +38,9 @@ For convenience, the principal detections and reductions are retained in tabular
 | 2025-08-21 to 08-25 | VLT / X-shooter, UVES | r⊙ ≈ 2.8–2.9 au | Optical spectra | CN; numerous Ni I; Fe I not detected; continuum slope ~21–22%/10³ Å | Natural Ni release mechanisms discussed; Fe upper limits set. | [7,8] |
 | 2025-08-24 | Keck II / KCWI (IFU) | r⊙ ≈ 2.75 au | Spatial mapping | Ni more centrally concentrated than CN; Ni e-folding radius shorter by ~200 km | Species-dependent parentage and lifetimes inferred. | [9] |
 | Sep–Oct 2025 | NASA overviews | Campaign | Ephemerides/visibility | Perihelion 29–30 Oct; Earth distance ≳ 1.8 au | No hazard indicated. | [2,3] |
+| **2025-09–10 (perihelion approach; midpoints per instrument)** | **STEREO-A / SECCHI HI1, COR2; SOHO / LASCO C3; NOAA GOES-19 / CCOR-1** | r⊙ → **1.36–1.40 au** (perihelion **2025-10-29 UT**); Δ ≈ **1.9 au** | Space-based white-light photometry & color | Comet brightness scaled as **r⊙^(-7.5 ± 1.0)** approaching perihelion; **LASCO color** shows object **bluer than the Sun** (gas-dominated emission); **CCOR-1 resolved coma ~4 arcmin** at peak | Perihelion occurred behind the Sun from Earth; solar coronagraphs/heliospheric imagers provided uninterrupted monitoring |
+| **2025-11-01 to 11-03** | **Lowell Discovery Telescope (4.3 m) + amateur imagers (e.g., 152-mm RC)** | r⊙ ≈ **1.39–1.41 au**; Δ ≈ **1.86–1.88 au**; elongation increasing | Post-conjunction ground detections (imaging) | **Imaging detections reported** as the comet cleared conjunction and rose before dawn; early frames from **LDT** (Nov 1 UT) and small-aperture rigs (Nov 1–3 UT). Limiting magnitudes vary by site/airmass; preliminary reports indicate **faint, compact coma** recoverable with stacking | Treat as **observer reports** pending formal notes/CBET; useful for planning November photometry as elongation improves |
+
 
 # 4. Results and Interpretation
 
