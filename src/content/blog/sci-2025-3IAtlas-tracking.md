@@ -64,6 +64,9 @@ All quantitative values reported here are taken from the cited primary sources. 
 
 **2025-10-18** — Initial analyst-grade compilation (Swift, SPHEREx, JWST, VLT, Keck) with narrative synthesis and research-grade table.
 
+**2025-11-03.** — Added perihelion entry (HI1/COR2/LASCO/CCOR-1; r^-7.5 law; blue color; ~4′ CCOR-1 coma). Appended post-conjunction first ground detections (Nov 1–3 UT; LDT + small-aperture imagers) flagged as observer reports.
+
+
 # 9. Acknowledgments
 
 We acknowledge the teams operating ATLAS, Swift/UVOT, JWST/NIRSpec, SPHEREx, VLT (X-shooter/UVES), and Keck/KCWI, and the Minor Planet Center for rapid dissemination of astrometry and designations.
