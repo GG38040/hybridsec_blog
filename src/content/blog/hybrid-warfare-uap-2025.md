@@ -2,7 +2,7 @@
 title: "State of UAP as a Hybrid Threat Surface"
 description: "What official investigations actually say about UAP—and how the phenomenon functions as a physical, cognitive, and institutional attack surface in a world of hybrid threats."
 pubDate: 2025-12-02
-topic: "hybrid-threats"
+topic: "hybrid-warfare"
 featuredImage: "https://images.pexels.com/photos/18071664/pexels-photo-18071664.jpeg"
 author:
   name: "yankee0one"
