@@ -294,5 +294,3 @@ Rupture awareness is only useful if it drives **concrete adaptation**. Here is t
 ## Closing: rupture is not destiny
 
 The uncomfortable truth is that **systems can change quickly** when feedback loops dominate. The more hopeful truth is that **adaptation can also move quickly**—when people have models, metrics, and playbooks that convert anxiety into action.
-
-If you publish monthly HRI updates, readers won’t just “feel” the polycrisis. They’ll be able to **track it**, debate it, and prepare for it.
