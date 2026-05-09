@@ -11,7 +11,6 @@ author:
 tags: ["physics", "nuclear propulsion", "general relativity", "quantum vacuum", "superheavy elements", "field theory", "uap"]
 ---
 
-![Conceptual scalar-tensor field craft engineering overview](src/assets/concept2_drawing_ap_craft.png)
 
 ## Abstract
 
