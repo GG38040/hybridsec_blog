@@ -3,7 +3,7 @@ title: "Nuclear-to-Metric Coupling: A Speculative Field Architecture for Scalarâ
 description: "A physics-grounded boundary test of a hypothetical coherent nuclearâ€“vacuum stress coupling, from superheavy isotope source terms to metric effects, conservation constraints, and falsifiable signatures."
 pubDate: 2026-05-09
 topic: "science"
-featuredImage: "../../assets/concept_drawing_ap_craft.png"
+featuredImage: ../../assets/concept_drawing_ap_craft.png
 author:
   name: "yankee0one"
   bio: "Scientific research analyst focused on the convergence of artificial intelligence, complex systems, and cyber defense."
