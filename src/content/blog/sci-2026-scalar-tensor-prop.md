@@ -3,7 +3,7 @@ title: "Nuclear-to-Metric Coupling: A Speculative Field Architecture for Scalarâ
 description: "A physics-grounded boundary test of a hypothetical coherent nuclearâ€“vacuum stress coupling, from superheavy isotope source terms to metric effects, conservation constraints, and falsifiable signatures."
 pubDate: 2026-05-09
 topic: "science"
-featuredImage: ../../assets/concept_drawing_ap_craft.png
+featuredImage: "https://images.pexels.com/photos/9962891/pexels-photo-9962891.jpeg"
 author:
   name: "yankee0one"
   bio: "Scientific research analyst focused on the convergence of artificial intelligence, complex systems, and cyber defense."
@@ -150,6 +150,8 @@ A useful conceptual configuration is:
 - 6 secondary lensing nodes for trim and gradient shaping.
 - 1 central inertial-envelope stabilizer.
 
+![Conceptual scalar-tensor field craft engineering overview](../../assets/concept_drawing_ap_craft.png)
+
 A simplified top-down layout:
 
 ```text
@@ -160,3 +162,4 @@ A simplified top-down layout:
 
       P9                  P5
            P8     P7    P6
+
