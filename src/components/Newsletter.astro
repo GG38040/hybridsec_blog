@@ -10,9 +10,20 @@
       Subscribe to our newsletter and receive the latest insights, exclusive content, and updates directly to your inbox.
     </p>
     
-    <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+    <form
+      name="newsletter"
+      method="POST"
+      action="/newsletter-success"
+      data-netlify="true"
+      class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+    >
+      <input type="hidden" name="form-name" value="newsletter" />
+      <label for="newsletter-email" class="sr-only">Email address</label>
       <input
+        id="newsletter-email"
+        name="email"
         type="email"
+        autocomplete="email"
         placeholder="Your email address"
         required
         class="px-4 py-3 rounded-lg flex-grow border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-700 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-secondary-500"

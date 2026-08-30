@@ -6,7 +6,7 @@ import ShareButtons from '../components/ShareButtons.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
 import AuthorBio from '../components/AuthorBio.astro';
 import TableOfContents from '../components/TableOfContents.astro';
-import type { CollectionEntry } from 'astro:content';
+import { render, type CollectionEntry } from 'astro:content';
 
 export interface Props {
   post: CollectionEntry<'blog'>;
@@ -14,10 +14,17 @@ export interface Props {
 
 const { post } = Astro.props;
 const { title, description, pubDate, updatedDate, featuredImage, topic, author } = post.data;
-const { Content, headings } = await post.render();
+const { Content, headings } = await render(post);
 ---
 
-<Layout title={title} description={description} image={featuredImage}>
+<Layout
+  title={title}
+  description={description}
+  image={featuredImage}
+  type="article"
+  publishedTime={pubDate}
+  modifiedTime={updatedDate}
+>
   <article class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
     <div class="mb-8">
       <TopicBadge topic={topic} />

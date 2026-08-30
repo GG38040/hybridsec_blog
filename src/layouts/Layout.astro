@@ -7,15 +7,22 @@ export interface Props {
   title: string;
   description?: string;
   image?: string;
+  type?: 'website' | 'article';
+  publishedTime?: Date;
+  modifiedTime?: Date;
 }
 
 const { 
   title, 
   description = "A professional blog covering science, space, national security, cyber security, and hybrid warfare.",
-  image = "/images/social-image.jpg" 
+  image = "https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg",
+  type = 'website',
+  publishedTime,
+  modifiedTime
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImage = new URL(image, Astro.site);
 ---
 
 <!doctype html>
@@ -31,20 +38,24 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" type="application/rss+xml" title="HybridSec RSS Feed" href={new URL('/rss.xml', Astro.site)} />
     
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="HybridSec" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={socialImage} />
+    {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={image} />
+    <meta property="twitter:image" content={socialImage} />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

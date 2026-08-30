@@ -2,13 +2,15 @@
 import FormattedDate from './FormattedDate.astro';
 import TopicBadge from './TopicBadge.astro';
 import type { CollectionEntry } from 'astro:content';
+import { getPostSlug } from '../utils/posts';
 
 interface Props {
   post: CollectionEntry<'blog'>;
 }
 
 const { post } = Astro.props;
-const { data, slug } = post;
+const { data } = post;
+const slug = getPostSlug(post);
 const { title, pubDate, featuredImage, topic, description, author } = data;
 ---
 

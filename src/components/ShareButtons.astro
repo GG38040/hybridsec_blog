@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const buttonClass = 'share-button p-2 text-gray-600 dark:text-gray-400 hover:text-secondary-500 dark:hover:text-secondary-400 transition-colors duration-200 rounded-full';
 ---
 
 <div class="mb-8">
@@ -11,7 +12,7 @@ const { title } = Astro.props;
   
   <div class="flex space-x-4">
     <button
-      class="share-button"
+      class={buttonClass}
       data-platform="twitter"
       aria-label="Share on Twitter"
     >
@@ -21,7 +22,7 @@ const { title } = Astro.props;
     </button>
     
     <button
-      class="share-button"
+      class={buttonClass}
       data-platform="facebook"
       aria-label="Share on Facebook"
     >
@@ -31,7 +32,7 @@ const { title } = Astro.props;
     </button>
     
     <button
-      class="share-button"
+      class={buttonClass}
       data-platform="linkedin"
       aria-label="Share on LinkedIn"
     >
@@ -41,7 +42,7 @@ const { title } = Astro.props;
     </button>
     
     <button
-      class="share-button copy-link"
+      class={`${buttonClass} copy-link`}
       aria-label="Copy link"
     >
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,9 +89,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-
-<style>
-.share-button {
-  @apply p-2 text-gray-600 dark:text-gray-400 hover:text-secondary-500 dark:hover:text-secondary-400 transition-colors duration-200 rounded-full;
-}
-</style>

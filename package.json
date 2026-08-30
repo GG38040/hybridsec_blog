@@ -1,5 +1,5 @@
 {
-  "name": "astro-project",
+  "name": "hybridsec-blog",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -10,12 +10,15 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.0.0",
-    "@astrojs/rss": "^4.0.1",
-    "@astrojs/sitemap": "^3.0.0",
-    "@astrojs/tailwind": "^5.0.0",
-    "astro": "^4.0.0",
-    "date-fns": "^3.0.0",
-    "tailwindcss": "^3.0.24"
+    "@astrojs/mdx": "^7.0.8",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.9",
+    "date-fns": "^4.1.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

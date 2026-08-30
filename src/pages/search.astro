@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PostGrid from '../components/PostGrid.astro';
+import SearchBar from '../components/SearchBar.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => data.draft !== true))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<Layout
+  title="Search | HybridSec"
+  description="Search HybridSec analysis across cyber security, hybrid warfare, national security, science, and space."
+>
+  <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl font-heading font-bold text-primary-500 dark:text-white mb-8">Search</h1>
+    <SearchBar />
+    <p id="search-status" class="mt-8 mb-6 text-gray-600 dark:text-gray-300" aria-live="polite">
+      Enter a term to search all articles.
+    </p>
+    <div id="search-results">
+      <PostGrid posts={posts} />
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const query = (params.get('q') ?? '').trim().toLocaleLowerCase();
+  const topic = params.get('topic');
+  const input = document.querySelector<HTMLInputElement>('#search-input');
+  const status = document.querySelector<HTMLElement>('#search-status');
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('#search-results article'));
+
+  if (input) input.value = params.get('q') ?? '';
+
+  let matches = 0;
+  cards.forEach((card) => {
+    const text = card.textContent?.toLocaleLowerCase() ?? '';
+    const visible = (!query || text.includes(query)) && (!topic || card.dataset.topic === topic);
+    card.hidden = !visible;
+    if (visible) matches += 1;
+  });
+
+  if (status) {
+    status.textContent = query
+      ? `${matches} article${matches === 1 ? '' : 's'} found for “${params.get('q')}”.`
+      : `${matches} articles available.`;
+  }
+</script>
