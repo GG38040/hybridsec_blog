@@ -10,6 +10,7 @@ export interface Props {
   type?: 'website' | 'article';
   publishedTime?: Date;
   modifiedTime?: Date;
+  noindex?: boolean;
 }
 
 const { 
@@ -18,7 +19,8 @@ const {
   image = "https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg",
   type = 'website',
   publishedTime,
-  modifiedTime
+  modifiedTime,
+  noindex = false
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -37,6 +39,7 @@ const socialImage = new URL(image, Astro.site);
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
     <link rel="canonical" href={canonicalURL} />
     <link rel="alternate" type="application/rss+xml" title="HybridSec RSS Feed" href={new URL('/rss.xml', Astro.site)} />
     
@@ -61,6 +64,13 @@ const socialImage = new URL(image, Astro.site);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script is:inline>
+      (() => {
+        const savedTheme = localStorage.getItem('theme');
+        const theme = savedTheme ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+      })();
+    </script>
   </head>
   <body class="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
     <Header />
@@ -68,26 +78,5 @@ const socialImage = new URL(image, Astro.site);
       <slot />
     </main>
     <Footer />
-
-    <script>
-      // Dark mode implementation
-      const theme = (() => {
-        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-          return localStorage.getItem('theme');
-        }
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          return 'dark';
-        }
-        return 'light';
-      })();
-      
-      if (theme === 'dark') {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-
-      window.localStorage.setItem('theme', theme);
-    </script>
   </body>
 </html>

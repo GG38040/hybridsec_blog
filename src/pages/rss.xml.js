@@ -3,9 +3,10 @@ import { getCollection } from 'astro:content';
 import { getPostSlug } from '../utils/posts';
 
 export async function GET(context) {
-  const blog = await getCollection('blog');
+  const blog = (await getCollection('blog', ({ data }) => data.draft !== true))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   return rss({
-    title: 'Perspective | Professional Blog',
+    title: 'HybridSec | Security, Science, and Technology Analysis',
     description: 'Expert analysis on science, space, and global security challenges that shape our future.',
     site: context.site,
     items: blog.map((post) => ({

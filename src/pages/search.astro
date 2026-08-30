@@ -11,6 +11,7 @@ const posts = (await getCollection('blog', ({ data }) => data.draft !== true))
 <Layout
   title="Search | HybridSec"
   description="Search HybridSec analysis across cyber security, hybrid warfare, national security, science, and space."
+  noindex
 >
   <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <h1 class="text-4xl font-heading font-bold text-primary-500 dark:text-white mb-8">Search</h1>

@@ -28,7 +28,7 @@ const { topic } = Astro.props;
   </form>
 </div>
 
-<script define:vars={{ topic }}>
+<script is:inline define:vars={{ topic }}>
 // This is a placeholder for search functionality
 // In a real implementation, you would handle the search here or redirect to a search page
 document.getElementById('search-form').addEventListener('submit', (e) => {

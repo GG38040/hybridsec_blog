@@ -9,9 +9,6 @@ const topics = [
   { name: 'Hybrid Warfare', href: '/hybrid-warfare' },
 ];
 
-const company = [
-];
-
 const resources = [
   { name: 'RSS Feed', href: '/rss.xml' },
   { name: 'Sitemap', href: '/sitemap-index.xml' }
@@ -21,7 +18,7 @@ const social = [
   { name: 'Twitter', href: 'https://twitter.com', icon: 'twitter' },
   { name: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' },
   { name: 'GitHub', href: 'https://github.com', icon: 'github' },
-];
+] as const;
 
 const socialIcons = {
   twitter: `<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>`,
@@ -32,13 +29,13 @@ const socialIcons = {
 
 <footer class="bg-gray-100 dark:bg-gray-800 py-12">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="lg:col-span-2">
         <a href="/" class="text-2xl font-heading font-bold text-primary-500 dark:text-white flex items-center space-x-2">
           <span class="flex items-center justify-center bg-primary-500 dark:bg-white w-8 h-8 rounded-full">
             <span class="text-white dark:text-primary-500 font-bold">P</span>
           </span>
-          <span>Perspective</span>
+          <span>HybridSec</span>
         </a>
         <p class="mt-4 text-gray-600 dark:text-gray-300 max-w-md">
           Bringing you expert analysis and insights on science, space exploration, and security challenges in our complex world.
@@ -72,19 +69,6 @@ const socialIcons = {
       </div>
       
       <div>
-        <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-300 uppercase tracking-wider">Company</h3>
-        <ul class="mt-4 space-y-2">
-          {company.map(item => (
-            <li>
-              <a href={item.href} class="text-gray-600 hover:text-primary-500 dark:text-gray-300 dark:hover:text-white transition-colors duration-200">
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      
-      <div>
         <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-300 uppercase tracking-wider">Resources</h3>
         <ul class="mt-4 space-y-2">
           {resources.map(item => (
@@ -100,7 +84,7 @@ const socialIcons = {
     
     <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
       <p class="text-gray-500 dark:text-gray-400 text-center">
-        &copy; {currentYear} Perspective. All rights reserved. Gen AI created blog and content.
+        &copy; {currentYear} HybridSec. All rights reserved. Content developed with generative AI assistance.
       </p>
     </div>
   </div>

@@ -52,7 +52,7 @@ const buttonClass = 'share-button p-2 text-gray-600 dark:text-gray-400 hover:tex
   </div>
 </div>
 
-<script define:vars={{ title }}>
+<script is:inline define:vars={{ title }}>
 document.addEventListener('DOMContentLoaded', () => {
   const url = window.location.href;
   const shareButtons = document.querySelectorAll('.share-button');
@@ -62,17 +62,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const platform = button.dataset.platform;
       
       if (platform === 'twitter') {
-        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`);
+        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`, '_blank', 'noopener,noreferrer');
       } else if (platform === 'facebook') {
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`);
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'noopener,noreferrer');
       } else if (platform === 'linkedin') {
-        window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`);
+        window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`, '_blank', 'noopener,noreferrer');
       }
     });
   });
   
   const copyButton = document.querySelector('.copy-link');
-  copyButton.addEventListener('click', () => {
+  copyButton?.addEventListener('click', () => {
     navigator.clipboard.writeText(url).then(() => {
       // Show copied feedback
       const originalHTML = copyButton.innerHTML;
@@ -81,9 +81,11 @@ document.addEventListener('DOMContentLoaded', () => {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
         </svg>
       `;
+      copyButton.setAttribute('aria-label', 'Link copied');
       
       setTimeout(() => {
         copyButton.innerHTML = originalHTML;
+        copyButton.setAttribute('aria-label', 'Copy link');
       }, 2000);
     });
   });
