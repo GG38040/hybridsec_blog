@@ -12,6 +12,7 @@ const blog = defineCollection({
     featuredImage: z.string().optional(),
     topic: z.enum(['science', 'space', 'national-security', 'cyber-security', 'hybrid-warfare']),
     draft: z.boolean().default(false),
+    articleImagesOnly: z.boolean().default(false),
     author: z.object({
       name: z.string(),
       bio: z.string(),

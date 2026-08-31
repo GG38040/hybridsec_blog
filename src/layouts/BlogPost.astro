@@ -13,7 +13,7 @@ export interface Props {
 }
 
 const { post } = Astro.props;
-const { title, description, pubDate, updatedDate, featuredImage, topic, author } = post.data;
+const { title, description, pubDate, updatedDate, featuredImage, topic, author, articleImagesOnly } = post.data;
 const { Content, headings } = await render(post);
 ---
 
@@ -76,8 +76,8 @@ const { Content, headings } = await render(post);
 
     <div class="mt-16 border-t border-gray-200 dark:border-gray-800 pt-8">
       <ShareButtons title={title} />
-      <AuthorBio author={author} />
-      <RelatedPosts currentTopic={topic} currentPostId={post.id} />
+      {!articleImagesOnly && <AuthorBio author={author} />}
+      {!articleImagesOnly && <RelatedPosts currentTopic={topic} currentPostId={post.id} />}
     </div>
   </article>
 </Layout>
