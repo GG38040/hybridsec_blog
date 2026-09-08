@@ -1,6 +1,6 @@
 ---
 title: "Rules of Life: Simulating Evolution in a Shifting World"
-description: "How resource scarcity, environmental change, and intra-species competition shape adaptive success—visualized through generative simulation."
+description: "An illustrative model of how resource scarcity, mutation, and environmental change affect survival, with limits on what the reported results establish."
 pubDate: 2025-05-27
 topic: "science"
 featuredImage: https://images.pexels.com/photos/1146708/pexels-photo-1146708.jpeg
@@ -9,99 +9,55 @@ author:
   bio: "Decade of experience watching PBS Space Time on youtube."
   avatar: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg"
 tags: ["Simulation", "AI", "Evolution", "Complex Systems", "Cybernetics"]
+updatedDate: 2026-09-08
 ---
 
-> *“The best adapted will always win through.”*  
-> — Rule 1 of Life
+A trait that helps an organism in one environment may become a disadvantage when conditions change. A small simulation gives us a way to explore that relationship by making the rules explicit and watching what follows.
 
----
+The original HybridSec experiment describes red squares, blue circles, and green triangles competing across generations. Each group encounters limited resources, changing environmental conditions, and random trait variation. These are simplified model assumptions, rather than universal rules of life.
 
-## A Digital Evolution Experiment
+## Define fitness within the model
 
-At HybridSec, we’re fascinated by how simple rules can produce complex, emergent behavior—just like in nature and cybersecurity. To explore these dynamics, we created a simulation where red squares, blue circles, and green triangles compete for survival across generations. Each “species” faces scarcity, shifting environments, and fierce competition—mirroring real-world evolution in digital form.
+Here, fitness means how closely a group's traits match the resource conditions represented by the simulation. When the resource target moves, the same trait can receive a different score.
 
+That is useful for illustrating selection, but “the best adapted will always win” is too strong. Random events, initial conditions, and the details of reproduction can affect which individuals survive. Biological fitness also concerns reproductive success; it is not a general ranking of strength or worth.
 
----
+A business adapting to a changing market offers a limited analogy. It can clarify the importance of context, but a model of simulated organisms cannot establish how a company should behave or predict which organization will succeed.
 
-## The Rules of Life (as Modeled)
+## Explain competition and variation
 
-### **Rule 1: The best adapted will always win through.**
+The model limits resources so that individuals cannot all obtain what they need. Competition can occur within a group as well as between groups. Small differences in traits may then influence survival and reproduction.
 
-In both biology and business, *fitness* means how well you match your environment. Our simulation quantifies fitness—how closely each group’s traits match the moving target of resource needs. When the environment shifts, groups with traits best aligned to new conditions have a clear advantage, reproducing more and surviving longer.
+Mutation introduces random changes. It supplies variation; it does not anticipate what the environment will require. Selection acts on the resulting differences under the conditions specified by the model.
 
-**Example:**  
-Think of tech companies during a digital transformation. Those that adapt—by shifting strategies, upskilling teams, and deploying new tech—thrive. Others are left behind. The same dynamic plays out at the cellular, organizational, and even societal level.
+Competition is only one relationship that real systems exhibit. Cooperation, chance, and constraints also matter. The simulation's inclusion of one mechanism should not be mistaken for proof that all adaptation requires competition.
 
-**Key takeaway:**  
-True fitness is situational and always changing. Success is less about starting position, more about the ability to adapt—constantly.
+## Change the environment deliberately
 
----
+The described model shifts environmental and resource variables at a fixed rate. This lets us ask how the pace of change affects the groups.
 
-### **Rule 2: Competition drives adaptation.**
+A slowly moving target may allow a population to track the resource conditions. A rapid shift may leave many individuals poorly matched. Those are hypotheses to test across runs, rather than conclusions established by the model's description.
 
-Life is a tournament. In our simulation, every group competes for limited, shifting resources. But the fiercest battles often happen within the same group, just as wolves compete with other wolves or businesses compete with market peers.
+Stability also has value. In security operations, maintained procedures and dependable infrastructure can support adaptation by making the baseline understandable. An analogy with evolution should help ask a question, not become a slogan against planning.
 
-As competition intensifies, small differences in trait adaptation can mean the difference between survival and extinction. In this digital arena, only the most adaptive red squares, blue circles, and green triangles make it through multiple generations.
+## Record the experiment
 
-**Example:**  
-In cyber defense, adversaries and defenders both innovate. As attackers get smarter, so must the defenders—rapidly evolving tactics, updating playbooks, and sharing intelligence. The pressure of “survival” fosters creativity and resilience.
+The original description tracks average fitness, survivors by group, and final mean traits. To reproduce the work, a reader would also need the source code, initial populations, mutation distribution, resource function, selection rules, number of generations, and random seed.
 
-**Key takeaway:**  
-Competition—especially from within—pushes systems to evolve. Without it, stagnation and decline are inevitable.
+Those materials were not included with the article. The table below preserves its reported values without treating them as independently reproduced results.
 
----
+| Group | Reported mean trait | Reported survivors |
+| --- | ---: | ---: |
+| Red | 0.34 | 24 |
+| Blue | 0.51 | 28 |
+| Green | 0.66 | 27 |
 
-### **Rule 3: The Earth never remains stable for long.**
+One table cannot establish a general advantage for any group. The result may change with another seed or a different rate of environmental drift. Without the full configuration, the trait values also lack enough context to explain why those survivors remained.
 
-Change is the only constant. In our model, environmental and resource variables shift at a fixed rate. What worked for a group yesterday might be obsolete tomorrow. Sometimes, the “dominant” group is suddenly vulnerable as new challenges emerge.
+## Turn the illustration into a test
 
-This mirrors the real world: ecosystems are rocked by climate change, companies by market disruption, and individuals by shifting opportunities or crises.
+Run the same conditions with several random seeds and compare variation across outcomes. Then change one assumption, such as resource abundance or environmental drift, while holding the others constant.
 
-**Example:**  
-Consider the cybersecurity landscape: new threats emerge, technologies evolve, and regulations shift. Teams that cling to last year’s playbook are quickly left behind.
+Include a stable environment as a comparison. Report extinctions as well as surviving populations, and make the code and configuration available so another person can inspect the process.
 
-**Key takeaway:**  
-Building for stability is a losing game. Instead, build for change—through agility, diversity, and a willingness to reinvent when conditions demand it.
-
----
-
-## Simulating Scarcity & Selection
-
-**Here’s how the experiment runs:**  
-- **Resources** are intentionally limited and their “location” in trait space gradually shifts.
-- Each *generation* experiences environmental drift and resource reallocation, requiring constant adaptation.
-- Groups undergo **mutation** (random trait changes), leading to a diversity of possible solutions.
-- Those that can’t keep up—whether due to poor adaptation or bad luck—face **extinction**.
-
-**We track:**  
-- *Average fitness over time* (who’s adapting best, and when?)  
-- *Survival count* for each group (who’s thriving or dwindling?)  
-- *Final evolved traits*—the signature of each group’s journey through selection and change.
-
----
-
-## Final Evolved Traits
-
-| Group | Mean Trait | Survivors |
-|-------|------------|-----------|
-| Red   | 0.34       | 24        |
-| Blue  | 0.51       | 28        |
-| Green | 0.66       | 27        |
-
-These results show how adaptation shapes outcomes—even if every group starts with an equal shot. Over time, some converge toward resource “hotspots,” while others lose out as the environment moves on.
-
----
-
-## Why It Matters
-
-This simulation is more than a digital curiosity. It’s a lens into the logic of **complex adaptive systems**—ecosystems, companies, security teams, even nations. The three rules are universally relevant:
-
-- *Adaptability outpaces raw power or luck.*
-- *Competition sharpens the edge of innovation and resilience.*
-- *Embrace change, or risk extinction.*
-
-Whether you’re defending networks, running a business, or just navigating an unpredictable world, the lesson is clear: The best-adapted not only survive—they shape the future.
-
----
-
-> Stay curious. Stay adaptive. Stay ahead.
+What interests me about this model is the connection between simple rules and outcomes that are difficult to predict by inspection. The next step is to make the experiment reproducible and determine which patterns persist when its assumptions change.
