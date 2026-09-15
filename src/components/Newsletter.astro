@@ -13,11 +13,15 @@
     <form
       name="newsletter"
       method="POST"
-      action="/newsletter-success"
+      action="/newsletter-success/"
       data-netlify="true"
+      netlify-honeypot="bot-field"
       class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
     >
       <input type="hidden" name="form-name" value="newsletter" />
+      <p hidden>
+        <label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </p>
       <label for="newsletter-email" class="sr-only">Email address</label>
       <input
         id="newsletter-email"
