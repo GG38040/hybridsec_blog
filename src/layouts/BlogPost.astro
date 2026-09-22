@@ -13,7 +13,7 @@ export interface Props {
 }
 
 const { post } = Astro.props;
-const { title, description, pubDate, updatedDate, featuredImage, topic, author, articleImagesOnly } = post.data;
+const { title, description, pubDate, updatedDate, featuredImage, featuredImageAlt, featuredImageCaption, topic, author, articleImagesOnly } = post.data;
 const { Content, headings } = await render(post);
 ---
 
@@ -52,13 +52,14 @@ const { Content, headings } = await render(post);
         )}
       </div>
       {featuredImage && (
-        <div class="rounded-lg overflow-hidden mb-8">
+        <figure class="rounded-lg overflow-hidden mb-8">
           <img 
             src={featuredImage} 
-            alt={title} 
+            alt={featuredImageAlt || title}
             class="w-full h-auto object-cover"
           />
-        </div>
+          {featuredImageCaption && <figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{featuredImageCaption}</figcaption>}
+        </figure>
       )}
     </div>
 

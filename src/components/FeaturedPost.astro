@@ -19,7 +19,7 @@ const { title, pubDate, featuredImage, topic, description, author } = data;
     <a href={`/blog/${slug}`} class="block h-full overflow-hidden">
       <img 
         src={featuredImage || 'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg'} 
-        alt={title}
+        alt={data.featuredImageAlt || title}
         class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
       />
     </a>

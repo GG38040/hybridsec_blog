@@ -10,6 +10,8 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     featuredImage: z.string().optional(),
+    featuredImageAlt: z.string().optional(),
+    featuredImageCaption: z.string().optional(),
     topic: z.enum(['science', 'space', 'national-security', 'cyber-security', 'hybrid-warfare']),
     draft: z.boolean().default(false),
     articleImagesOnly: z.boolean().default(false),
