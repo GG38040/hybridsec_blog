@@ -1,15 +1,16 @@
 ---
 title: "The Geometry of the Unknown: A Collective-Motion Approach to UAP"
 pubDate: 2026-09-21
+updatedDate: 2026-09-22
 topic: "science"
-featuredImage: "/images/uap-collective-motion/04_709_near_linear_spacing.png"
-featuredImageAlt: "Infrared view of high-speed boats in near-linear formation on the water, used as a surface-vessel comparison."
-featuredImageCaption: "Video 709 shows high-speed boats on the water. This surface-vessel comparison illustrates formation geometry, wakes, and infrared sensor interpretation; it is not an example of aerial phenomena."
+featuredImage: "/images/uap-collective-motion/04_709_transient_uap_focus.png"
+featuredImageAlt: "Annotated infrared frames from Video 709 marking the approximate lower-left transient region, with a surface boat labeled as a scene reference."
+featuredImageCaption: "Video 709: red boxes mark the approximate region of the brief AARO-described transient. The persistent boat is a scene reference; the boxes do not establish object boundaries or count."
 author:
   name: "yankee0one"
   bio: "Decade of experience watching PBS Space Time on YouTube."
   avatar: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg"
-description: "A collective-motion approach to UAP research, using high-speed boats as a surface-formation and infrared-sensor comparison alongside animal groups and human formation flight."
+description: "A corrected collective-motion analysis of UAP imagery: formation measurements from Videos 718 and 782, with Video 709 treated as a brief transient pending dedicated tracking."
 tags:
   - UAP
   - science
@@ -18,6 +19,8 @@ tags:
   - sensor-analysis
   - aviation
 ---
+
+> **Correction — September 22, 2026:** The initial analysis tracked the prominent boats in Video 709 rather than the brief transient described by AARO. Dataset v0.2 removes those boat-derived measurements. The quantitative charts now cover Videos 718 and 782 only; Video 709 remains an event-level case pending dedicated tracking.
 
 Most analysis of unidentified anomalous phenomena begins with the individual object.
 
@@ -39,11 +42,9 @@ That suggests a different starting point:
 
 This article is a first attempt to build that approach using three publicly released DoD/AARO videos and a small calibration dataset derived from them.
 
-**Video 709 shows high-speed boats on the water. It is included as a surface-formation and sensor comparison, not as evidence of aerial phenomena.** The other two recordings remain separate cases whose apparent features require their own analysis.
-
 It is not an attempt to prove that the observed features are exotic technology, non-human intelligence, secret aircraft, birds, balloons, or anything else.
 
-The purpose is narrower and, I think, more useful:
+The purpose is narrower:
 
 **Can formation geometry itself become a measurable part of UAP research?**
 
@@ -53,17 +54,15 @@ The purpose is narrower and, I think, more useful:
 
 The analysis began with three DoD videos released through the Defense Visual Information Distribution Service (DVIDS) and attributed to the All-domain Anomaly Resolution Office (AARO).
 
-### DOD_111719709 / DOW-UAP-PR050: boats as a comparison
+### DOD_111719709 / DOW-UAP-PR050
 
-<iframe class="formation-video" src="https://www.dvidshub.net/video/embed/1007706" title="Video 709: high-speed boats on the water, a formation and sensor comparison" width="800" height="450" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+<iframe class="formation-video" src="https://www.dvidshub.net/video/embed/1007706" title="Video 709: brief lower-left transient; surface boats provide scene references" width="800" height="450" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
 
 [Watch DOD_111719709 / DOW-UAP-PR050 on DVIDS](https://www.dvidshub.net/video/1007706)
 
 AARO assesses this video as likely derived from an infrared sensor aboard a U.S. military platform operating in the U.S. Central Command area of responsibility in 2022. The uploader-defined title describes "4 UAP Formation Iran 26 Aug 2022 over water." AARO's own video description is more conservative, referring to four **areas of contrast** transiting the sensor field of view.[[1]](#source-1)
 
-The source title is retained for provenance. In this article, 709 is a comparison showing high-speed boats and their wakes on the water. The boat identification is the article's interpretation, rather than an identification attributed to AARO's description. A surface formation can produce persistent alignment and trailing signatures in infrared imagery, making this a useful example of both formation activity and sensor capability.
-
-The measurements still describe **apparent features**, **resolved lobes**, and **areas of contrast** in the image. Separating a boat's return from its wake is part of the measurement problem; the pixels alone do not establish its speed.
+That distinction is important. Throughout this analysis we use terms such as **apparent feature**, **resolved lobe**, and **area of contrast** unless the evidence supports something stronger.
 
 ### DOD_111719718 / DOW-UAP-PR052
 
@@ -91,30 +90,30 @@ The released imagery gives us a useful opportunity because several compact retur
 
 ## What we measured
 
-I built a small calibration dataset from the three released videos.
+The calibration dataset records measurements and event notes from the three released videos.
 
-The 709 measurements represent the boat comparison. Including them in the same dataset or chart does not classify the boats as aerial UAP.
+The corrected quantitative dataset currently contains:
 
-The current version contains:
-
-- **88 apparent-feature centroid measurements**
-- **24 sampled formation states**
+- **73 apparent-feature centroid measurements**
+- **19 sampled formation states**
+- quantitative formation measurements from Videos **718 and 782**
 - pixel and normalized image coordinates
 - number of separately resolved features
 - group centroid
 - formation width and height
-- pairwise separation statistics
-- nearest-neighbor separation statistics
+- pairwise and nearest-neighbor separation statistics
 - major-axis orientation
 - a projected **linearity index**
 - confidence notes and candidate discontinuities
 
+Video 709 is treated differently in version 0.2. The initial pass mistakenly tracked the three visually dominant rigid-hull inflatable boats (RHIBs) rather than the brief AARO-described transient in the lower-left portion of the scene. Those boat-derived measurements have been removed from the UAP formation analysis. Video 709 remains in the dataset as an event-level case pending dedicated tracking of the approximately three-second transient.
+
 Select any figure to open the full-resolution image.
 
-The dataset is available here:
+The corrected dataset is available here:
 
-- [Excel workbook](/data/UAP_Collective_Motion_Calibration_Dataset_v0.1.xlsx)
-- [CSV package](/data/UAP_Collective_Motion_Calibration_Dataset_v0.1_CSV.zip)
+- [Excel workbook](/data/UAP_Collective_Motion_Calibration_Dataset_v0.2.xlsx)
+- [CSV package](/data/UAP_Collective_Motion_Calibration_Dataset_v0.2_CSV.zip)
 
 The goal is reproducibility. Readers should be able to inspect the measurements, disagree with a centroid, substitute a better tracking method, or test a different hypothesis.
 
@@ -198,7 +197,6 @@ Different animal groups solve different problems. Those functions leave differen
 | **Emperor penguin huddles** | Thermoregulation | Small movements propagate through a tightly packed group as waves | Do positional changes propagate sequentially through the group? |
 | **Ant trail systems** | Navigation and resource exploitation | Individuals coordinate indirectly through environmental signals | Could apparent collective behavior arise through a shared environmental constraint rather than direct coordination? |
 | **Human formation flight** | Lookout, deconfliction, maneuver, tactics, sometimes aerodynamic benefit | Assigned relative positions, leader/wingman relationships, deliberate station correction | Does geometry behave like role-based station keeping? |
-| **Boats traveling in formation** | Coordinated surface movement | Relative spacing, shared headings, and visible wakes | How do surface motion, wakes, camera angle, and infrared contrast affect the measured formation? |
 
 </div>
 
@@ -344,53 +342,51 @@ Our calibration dataset is small. The goal is not statistical certainty.
 
 The goal is to demonstrate that collective-motion variables can be extracted at all.
 
-## Video 709: boat formation and infrared sensor capability
+### Video 709: a brief transient against a much more obvious surface scene
 
-The high-speed boats provide an interesting comparison: ordinary surface vessels can maintain a strongly aligned formation while their wakes add structure to the sensor image. This section measures that projected geometry and considers what the sensor resolves.
+Video 709 is a useful example of why target definition has to come before measurement.
 
-Across five sampled states between approximately 1 and 8 seconds, three dominant dark compact features remained strongly distributed along a common major axis.
+The most visually prominent objects in the recording are three rigid-hull inflatable boats moving across the water with strong wakes. Those boats occupy much of the frame, are easy to segment, and travel on a broadly common axis.
 
-The median projected linearity index for the sampled states was approximately **0.999**.
+They are not the event we are trying to characterize.
 
-Here I define linearity as:
+AARO's public description identifies the relevant portion of the video much more specifically: from approximately **00:01 to 00:04, four areas of contrast transit the sensor field of view, entering from the lower third of the left side of the screen and exiting near the center of the bottom of the frame**.[[1]](#source-1)
+
+That brief transit is the UAP-relevant observation.
+
+[![Video 709 transient UAP focus](/images/uap-collective-motion/04_709_transient_uap_focus.png)](/images/uap-collective-motion/04_709_transient_uap_focus.png)
+
+*Figure 1. DOD_111719709. The persistent RHIB is labeled only as a scene reference. The broad red boxes indicate the lower-left transient region described by AARO. They are not intended to assert exact object boundaries or a one-to-one physical-object count.*
+
+This also exposes an important methodological failure in our first pass. An automated or semi-automated tracker will naturally lock onto the highest-contrast, longest-lived features in the scene. In this case, that meant the boats.
+
+The result looked mathematically tidy. It was also measuring the wrong thing.
+
+The earlier near-perfect "linearity" result for Video 709 therefore **is not a UAP result and has been removed from the corrected dataset**.
+
+The boats are still useful, but only as references. Their wakes and persistent motion may help us estimate image stabilization, sensor motion, and relative motion of the short-lived transient. They should not be mixed into the anomalous-feature formation statistics.
+
+Because the UAP-relevant interval lasts only a few seconds and the apparent features are small, Video 709 should carry little inferential weight in this first article. Its value is more modest:
+
+> **Can we recover the four AARO-described transient features, stabilize the scene using the persistent surface traffic, and determine whether their relative geometry contains any information during the short crossing?**
+
+That is a worthwhile follow-up analysis. It is not yet a finding.
+
+For the quantitative comparisons that follow, we restrict the current formation metrics to Videos 718 and 782.
+
+To describe projected geometry, we use a simple linearity index:
 
 <p class="formation-equation" aria-label="L equals one minus lambda two divided by lambda one"><var>L</var> = 1 &minus; <var>&lambda;</var><sub>2</sub> / <var>&lambda;</var><sub>1</sub></p>
 
-where <var>&lambda;</var><sub>1</sub> and <var>&lambda;</var><sub>2</sub> are the major and minor eigenvalues of the two-dimensional position covariance matrix.
+where <var>&lambda;</var><sub>1</sub> and <var>&lambda;</var><sub>2</sub> are the major and minor eigenvalues of the two-dimensional position covariance matrix. A value near 1 means that the sampled feature centroids fall strongly along one image-plane axis. It does not establish a physical line in three-dimensional space.
 
-A value near 1 means that the resolved feature centroids fall overwhelmingly along one projected axis.
+[![Projected formation linearity in Videos 718 and 782](/images/uap-collective-motion/01_linearity_718_782.png)](/images/uap-collective-motion/01_linearity_718_782.png)
 
-For the boat comparison, a value near 1 describes projected alignment. It does **not** establish exact spacing on the water or any aerial behavior.
-
-Perspective can produce a line.
-
-Camera orientation can produce a line.
-
-A common environmental structure can produce a line.
-
-But persistence gives us something to test.
-
-[![Sampled formation linearity by video](/images/uap-collective-motion/01_linearity_over_time.png)](/images/uap-collective-motion/01_linearity_over_time.png)
-
-*Figure 1. Projected linearity index across sampled timestamps. Video 709 is the surface-boat comparison; the other recordings are separate cases. A value near 1 indicates alignment of sampled image-feature centroids, not an identification or evidence of aerial motion.*
-
-At approximately 2.5 seconds, the boats and their similarly oriented wakes illustrate how a sensor can show both compact vessel returns and extended surface disturbances. Contrast, viewing angle, image processing, and resolution affect which parts become measurable features.
-
-[![High-speed boats and wakes on the water in Video 709, used as a formation and infrared-sensor comparison](/images/uap-collective-motion/04_709_near_linear_spacing.png)](/images/uap-collective-motion/04_709_near_linear_spacing.png)
-
-*Figure 2. High-speed boats on the water in DOD_111719709 at approximately 2.5 seconds. Red circles identify sampled image-feature centroids. This is a comparison for surface-formation activity and infrared sensor capability, not aerial phenomena. The boats, wakes, and water texture provide useful context for testing feature separation, background stabilization, and projected spacing; no physical speed is derived here.*
-
-The nearest-neighbor coefficient of variation in our five sampled states declines from roughly 0.077 to 0.042.
-
-That could indicate increasingly regular projected spacing.
-
-It could also arise from changing range, perspective, camera geometry, segmentation error, or the fact that we are measuring only three dominant lobes in a processed video.
-
-The practical next step is to stabilize the background and track vessel returns separately from wakes frame-by-frame. The boat comparison can help test whether a method preserves formation geometry and distinguishes compact returns from extended surface features before it is applied to less understood recordings.
+*Figure 2. Projected linearity across sampled timestamps in the two longer-duration cases. Lines connect discrete samples for readability; they do not establish continuous tracks across edits. This is a geometric descriptor only; perspective, sensor motion, and processing remain competing explanations.*
 
 ---
 
-## Video 718: a recurring subgroup-plus-offset-member pattern
+### Video 718: a recurring subgroup-plus-offset-member pattern
 
 Video 718 looks qualitatively different.
 
@@ -410,11 +406,11 @@ A later sample provides another example.
 
 *Figure 4. DOD_111719718 at approximately 60 seconds. A similar subgroup-plus-offset-member geometry is visible.*
 
-Across the samples used in this first-pass dataset, Video 718 has a median pairwise-distance coefficient of variation of roughly **0.565**, higher than the other two videos.
+Across the samples used in this corrected quantitative dataset, Video 718 has a median pairwise-distance coefficient of variation of roughly **0.565**, higher than Video 782.
 
-[![Median pairwise-distance variation](/images/uap-collective-motion/03_median_pairwise_cv.png)](/images/uap-collective-motion/03_median_pairwise_cv.png)
+[![Median pairwise-distance variation](/images/uap-collective-motion/03_pairwise_cv_718_782.png)](/images/uap-collective-motion/03_pairwise_cv_718_782.png)
 
-*Figure 5. Median coefficient of variation of pairwise image-plane separation in the sampled states. Video 718 is geometrically more heterogeneous in this initial dataset.*
+*Figure 5. Median coefficient of variation of pairwise image-plane separation in sampled states from Videos 718 and 782. Video 718 is geometrically more heterogeneous in this initial comparison.*
 
 This is interesting, but it is also the video where caution matters most.
 
@@ -434,7 +430,7 @@ If no, the visual pattern may be projection, processing, or coincidence.
 
 ---
 
-## Video 782: feature count changes while a common axis often remains
+### Video 782: feature count changes while a common axis often remains
 
 Video 782 may eventually be the most useful of the three for collective-motion analysis.
 
@@ -446,9 +442,9 @@ It is a measurement problem.
 
 Nearby returns can merge below the effective resolution of the image and separate again later.
 
-[![Resolved apparent features by timestamp](/images/uap-collective-motion/02_resolved_features_over_time.png)](/images/uap-collective-motion/02_resolved_features_over_time.png)
+[![Resolved apparent features by timestamp](/images/uap-collective-motion/02_resolved_features_718_782.png)](/images/uap-collective-motion/02_resolved_features_718_782.png)
 
-*Figure 6. Number of separately resolved apparent features in each sampled state. This is deliberately not labeled "object count."*
+*Figure 6. Number of separately resolved apparent features in sampled states from Videos 718 and 782. Lines connect discrete samples rather than continuous tracks. This is deliberately not labeled "object count."*
 
 At approximately 20 seconds, three compact features are readily separable and strongly line-like in projection.
 
@@ -653,7 +649,7 @@ The job is to infer the rules.
 
 This dataset is deliberately small.
 
-It should be treated as **version 0.1 of a method**, not as evidence for a grand conclusion.
+It should be treated as **an early calibration of a method**, not as evidence for a grand conclusion.
 
 The immediate next step is continuous tracking.
 
@@ -695,12 +691,10 @@ Questions are useful when we know how to measure them.
 
 The calibration dataset used in this article is published alongside the post:
 
-**Interpretation note:** DOD_111719709 is the high-speed-boat comparison. Its inclusion in the v0.1 files and cross-video charts does not make it an aerial UAP case. The original image-plane measurements are retained.
+- [UAP Collective Motion Calibration Dataset v0.2 — Excel](/data/UAP_Collective_Motion_Calibration_Dataset_v0.2.xlsx)
+- [UAP Collective Motion Calibration Dataset v0.2 — CSV package](/data/UAP_Collective_Motion_Calibration_Dataset_v0.2_CSV.zip)
 
-- [UAP Collective Motion Calibration Dataset v0.1 — Excel](/data/UAP_Collective_Motion_Calibration_Dataset_v0.1.xlsx)
-- [UAP Collective Motion Calibration Dataset v0.1 — CSV package](/data/UAP_Collective_Motion_Calibration_Dataset_v0.1_CSV.zip)
-
-The current dataset contains manually curated and algorithm-assisted image-feature measurements from the publicly released video copies. Future versions should add continuous tracking, stabilization transforms, centroid uncertainty, explicit segment boundaries, model-fit results, and reproducible analysis code.
+The current dataset contains manually curated and algorithm-assisted image-feature measurements from the publicly released video copies. Version 0.2 also documents the correction that removes the RHIB-derived Video 709 measurements from UAP formation statistics. Future versions should add continuous tracking, stabilization transforms, centroid uncertainty, explicit segment boundaries, model-fit results, and reproducible analysis code.
 
 If you find an error in the measurements or can improve the tracking methodology, that is part of the experiment.
 
