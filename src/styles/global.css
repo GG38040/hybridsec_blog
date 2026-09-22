@@ -71,6 +71,50 @@
   .prose figcaption {
     @apply text-center text-sm text-gray-500 dark:text-gray-400 mt-2;
   }
+
+  .formation-video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 0.5rem;
+    margin-block: 1.5rem;
+  }
+
+  .formation-equation {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .prose:has(.formation-video) ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+
+  .prose:has(.formation-video) ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+  }
+
+  .formation-table {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-block: 1.5rem;
+  }
+
+  .formation-table table {
+    min-width: 42rem;
+    border-collapse: collapse;
+  }
+
+  .formation-table th,
+  .formation-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid;
+    text-align: left;
+    vertical-align: top;
+    @apply border-gray-200 dark:border-gray-700;
+  }
 }
 
 @layer utilities {
