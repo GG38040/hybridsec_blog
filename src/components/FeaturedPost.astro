@@ -2,13 +2,15 @@
 import FormattedDate from './FormattedDate.astro';
 import TopicBadge from './TopicBadge.astro';
 import type { CollectionEntry } from 'astro:content';
+import { getPostSlug } from '../utils/posts';
 
 interface Props {
   post: CollectionEntry<'blog'>;
 }
 
 const { post } = Astro.props;
-const { data, slug } = post;
+const { data } = post;
+const slug = getPostSlug(post);
 const { title, pubDate, featuredImage, topic, description, author } = data;
 ---
 
@@ -17,7 +19,7 @@ const { title, pubDate, featuredImage, topic, description, author } = data;
     <a href={`/blog/${slug}`} class="block h-full overflow-hidden">
       <img 
         src={featuredImage || 'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg'} 
-        alt={title}
+        alt={data.featuredImageAlt || title}
         class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
       />
     </a>

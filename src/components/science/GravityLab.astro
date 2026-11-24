@@ -1,0 +1,162 @@
+---
+interface Props {
+  mode: 'planet' | 'body' | 'stress';
+}
+const { mode } = Astro.props;
+const titles = { planet: 'Build a rocky planet', body: 'Scale a human analogue', stress: 'Explore the cost of gigantism' };
+const numbers = { planet: '01', body: '02', stress: '03' };
+const bodyPath = 'M0 0 a9 9 0 1 0 0 18 a9 9 0 1 0 0 -18 M-6 20 L-18 25 -24 52 -27 80 -19 82 -11 52 -10 92 -13 119 -14 150 -4 150 0 105 4 150 14 150 13 119 10 92 11 52 19 82 27 80 24 52 18 25 6 20Z';
+const gravities = [0.5, 1, 2, 3];
+const colors = ['#a5d6a7', '#7dd3fc', '#fbbf24', '#fb7185'];
+---
+<hs-gravity-lab class="science-lab" data-mode={mode}>
+  <div class="lab-kicker">HYBRIDSEC SCIENCE LAB / {numbers[mode]}</div>
+  <h3>{titles[mode]}</h3>
+  {mode === 'planet' && <>
+    <p>Change planetary mass to see how radius, surface gravity and escape speed respond.</p>
+    <svg viewBox="0 0 360 170" role="img" aria-label="Relative planetary radius illustration">
+      <circle cx="85" cy="82" r="38" fill="#397da1" stroke="#7dd3fc" stroke-width="2" />
+      <path d="M65 56 L82 49 95 59 89 72 101 85 83 95 72 80 61 77Z M96 101 L111 96 116 107 104 117Z" fill="#a5d6a7" />
+      <circle data-planet cx="254" cy="82" r="57.1" fill="#a47c58" stroke="#fbbf24" stroke-width="2"/>
+      <text x="85" y="160" text-anchor="middle">Earth</text>
+      <text x="254" y="160" text-anchor="middle">Model planet</text>
+    </svg>
+    <label>Planetary mass <strong data-value="planet-mass">4.5 Earths</strong>
+      <input type="range" data-input="planet-mass" min="1" max="8" step="0.1" value="4.5" />
+    </label>
+    <div class="metrics" aria-live="polite">
+      <div><span>Radius (Earths)</span><strong data-result="radius">1.50</strong></div>
+      <div><span>Surface gravity</span><strong data-result="gravity">2.00g</strong></div>
+      <div><span>Escape speed</span><strong data-result="escape">19.4 km/s</strong></div>
+    </div>
+    <p class="note">Earth-normalized approximation to Zeng et al. (2016): R/R⊕ = (M/M⊕)^(1/3.7), for a fixed Earth-like rocky composition. Surface gravity is proportional to M/R². No atmosphere, rotation or habitability is modeled.</p>
+  </>}
+  {mode === 'body' && <>
+    <p>Compare a six-foot, 180-pound Earth reference with a geometrically similar organism at equal relative structural stress.</p>
+    <svg viewBox="0 0 360 220" role="img" aria-label="Relative height of reference and model organisms">
+      <line x1="20" y1="185" x2="340" y2="185" stroke="#94a3b8" />
+      <g data-reference transform="translate(96 35) scale(1)" fill="#7dd3fc"><path d={bodyPath}/></g>
+      <g data-body transform="translate(260 110) scale(0.5)" fill="#fbbf24"><path d={bodyPath}/></g>
+      <text x="96" y="207" text-anchor="middle">Earth reference</text>
+      <text x="260" y="207" text-anchor="middle">Model organism</text>
+    </svg>
+    <label>Surface gravity <strong data-value="body-gravity">2.0g</strong>
+      <input type="range" data-input="body-gravity" min="0.5" max="3" step="0.1" value="2"/>
+    </label>
+    <label>Effective structural capacity <strong data-value="capacity">1.0×</strong>
+      <input type="range" data-input="capacity" min="0.5" max="2" step="0.1" value="1"/>
+    </label>
+    <div class="metrics" aria-live="polite">
+      <div><span>Equivalent height</span><strong data-result="height">3.00 ft</strong></div>
+      <div><span>Equivalent mass</span><strong data-result="mass">22.5 lb</strong></div>
+    </div>
+    <p class="note">Height = 6 × capacity/gravity; mass = 180 × (capacity/gravity)³. Capacity is an assumed multiplier on tolerable stress, not a measured evolutionary response. Density and proportions remain constant. The results are not predicted adult heights, viable body sizes or estimates of alien anatomy.</p>
+  </>}
+  {mode === 'stress' && <>
+    <p>Compare normalized static stress as linear size changes. The colored lines represent four gravitational environments.</p>
+    <svg viewBox="0 0 360 245" role="img" aria-label="Relative structural stress versus relative linear size at 0.5, 1, 2 and 3 Earth gravities">
+      {Array.from({length: 4}, (_, i) => <g>
+        <line x1="42" y1={193-i*54} x2="335" y2={193-i*54} stroke="#475569" stroke-dasharray="3 4"/>
+        <text x="34" y={197-i*54} text-anchor="end">{i*3}</text>
+      </g>)}
+      <path d="M42 31 V193 H335" stroke="#94a3b8" fill="none"/>
+      {gravities.map((g, i) => <line x1="42" y1="193" x2="335" y2={193-3*g*18} stroke={colors[i]} stroke-width="2.5"/>)}
+      {[0,1,2,3].map(i => <text x={42+i*293/3} y="210" text-anchor="middle">{i}×</text>)}
+      <text x="188" y="235" text-anchor="middle">Relative linear size</text>
+      <text x="12" y="112" transform="rotate(-90 12 112)" text-anchor="middle">Relative stress</text>
+      <circle data-marker cx="139.67" cy="157" r="5" fill="#fff" stroke="#0f172a" stroke-width="1.5"/>
+    </svg>
+    <div class="legend">{gravities.map((g,i) => <span><i style={`background:${colors[i]}`}></i>{g}g</span>)}</div>
+    <label>Linear size relative to Earth reference <strong data-value="size">1.0×</strong>
+      <input type="range" data-input="size" min="0.5" max="3" step="0.1" value="1"/>
+    </label>
+    <label>Surface gravity <strong data-value="stress-gravity">2.0g</strong>
+      <input type="range" data-input="stress-gravity" min="0.5" max="3" step="0.5" value="2"/>
+    </label>
+    <div class="metrics" aria-live="polite">
+      <div><span>Relative structural stress</span><strong data-result="stress">2.00×</strong></div>
+    </div>
+    <p class="note">Relative stress = gravity × linear size. A reference value of 1× is not a failure threshold. The model excludes motion, fatigue, posture changes and other adaptations.</p>
+  </>}
+  <button type="button" data-reset>Reset experiment</button>
+  <noscript><p class="note">Enable JavaScript to change the displayed example values.</p></noscript>
+</hs-gravity-lab>
+
+<script>
+  import { planet, equivalentBody, relativeStress } from '../../utils/gravity-lab';
+
+  class GravityLab extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.ready) return;
+      this.dataset.ready = 'true';
+      const inputs = Array.from(this.querySelectorAll<HTMLInputElement>('input[data-input]'));
+      const value = (name: string) => Number(this.querySelector<HTMLInputElement>(`[data-input="${name}"]`)?.value);
+      const write = (name: string, text: string) => {
+        const target = this.querySelector(`[data-result="${name}"], [data-value="${name}"]`);
+        if (target) target.textContent = text;
+      };
+      const update = () => {
+        if (this.dataset.mode === 'planet') {
+          const mass = value('planet-mass');
+          const p = planet(mass);
+          write('planet-mass', mass.toFixed(1) + ' Earths');
+          write('radius', p.radius.toFixed(2));
+          write('gravity', p.gravity.toFixed(2) + 'g');
+          write('escape', p.escape.toFixed(1) + ' km/s');
+          this.querySelector('[data-planet]')?.setAttribute('r', String(38 * p.radius));
+        } else if (this.dataset.mode === 'body') {
+          const gravity = value('body-gravity');
+          const capacity = value('capacity');
+          const b = equivalentBody(gravity, capacity);
+          write('body-gravity', gravity.toFixed(1) + 'g');
+          write('capacity', capacity.toFixed(1) + '×');
+          write('height', b.height.toFixed(2) + ' ft');
+          write('mass', b.mass.toLocaleString('en-US', { maximumFractionDigits: 1 }) + ' lb');
+          const unit = Math.min(25, 150 / Math.max(6, b.height));
+          const refScale = unit * 6 / 150;
+          const modelScale = unit * b.height / 150;
+          this.querySelector('[data-reference]')?.setAttribute('transform', `translate(96 ${185-150*refScale}) scale(${refScale})`);
+          this.querySelector('[data-body]')?.setAttribute('transform', `translate(260 ${185-150*modelScale}) scale(${modelScale})`);
+        } else {
+          const gravity = value('stress-gravity');
+          const size = value('size');
+          const stress = relativeStress(gravity, size);
+          write('stress-gravity', gravity.toFixed(1) + 'g');
+          write('size', size.toFixed(1) + '×');
+          write('stress', stress.toFixed(2) + '×');
+          this.querySelector('[data-marker]')?.setAttribute('cx', String(42 + size * 293 / 3));
+          this.querySelector('[data-marker]')?.setAttribute('cy', String(193 - stress * 18));
+        }
+      };
+      inputs.forEach(input => input.addEventListener('input', update));
+      this.querySelector('[data-reset]')?.addEventListener('click', () => {
+        inputs.forEach(input => { input.value = input.defaultValue; });
+        update();
+      });
+      update();
+    }
+  }
+  if (!customElements.get('hs-gravity-lab')) customElements.define('hs-gravity-lab', GravityLab);
+</script>
+
+<style>
+  .science-lab { display:block; margin:2rem 0; padding:clamp(1rem, 3vw, 1.5rem); background:#0f172a; color:#e2e8f0; border:1px solid #334155; border-radius:1rem; font-family:system-ui,sans-serif; color-scheme:dark; }
+  .lab-kicker { font-size:.72rem; letter-spacing:.13em; font-weight:700; color:#7dd3fc; }
+  .science-lab h3 { color:#f8fafc; margin:.5rem 0; font-size:1.3rem; line-height:1.3; }
+  .science-lab p { color:#cbd5e1; font-size:.95rem; line-height:1.6; margin:.65rem 0; }
+  .science-lab svg { display:block; width:100%; max-width:420px; margin:.75rem auto; }
+  .science-lab svg text { fill:#e2e8f0; font-size:11px; }
+  .science-lab label { display:block; margin:1rem 0; font-size:.9rem; color:#e2e8f0; }
+  .science-lab label strong { float:right; color:#fbbf24; font-variant-numeric:tabular-nums; }
+  .science-lab input { display:block; width:100%; margin:.55rem 0; accent-color:#7dd3fc; min-height:24px; }
+  .metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(105px,1fr)); gap:.6rem; margin:1rem 0; }
+  .metrics div { background:#1e293b; padding:.7rem; border-radius:.5rem; }
+  .metrics span { display:block; font-size:.75rem; color:#cbd5e1; }
+  .metrics strong { display:block; font-size:1.2rem; color:#f8fafc; font-variant-numeric:tabular-nums; overflow-wrap:anywhere; }
+  .science-lab .note { font-size:.78rem; color:#cbd5e1; }
+  .legend { display:flex; flex-wrap:wrap; justify-content:center; gap:.85rem; font-size:.8rem; }
+  .legend span { display:flex; align-items:center; gap:.35rem; }
+  .legend i { width:.9rem; height:.2rem; display:inline-block; }
+  .science-lab button { background:transparent; border:1px solid #94a3b8; color:#f8fafc; padding:.5rem .8rem; border-radius:.4rem; min-height:44px; cursor:pointer; font-size:.85rem; }
+  .science-lab button:focus-visible, .science-lab input:focus-visible { outline:2px solid #fbbf24; outline-offset:3px; }
+</style>

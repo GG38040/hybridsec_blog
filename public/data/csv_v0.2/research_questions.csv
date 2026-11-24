@@ -1,0 +1,11 @@
+id,theme,research_question,why_it_matters
+Q01,Formation persistence,Do pairwise angular separations remain stable after camera translation/rotation is removed?,Rigid station-keeping vs elastic group motion
+Q02,Subgroup structure,Does the recurring 3+1 topology in 718 persist within uninterrupted segments?,"Role differentiation, perspective effect, or repeated resolution artifact"
+Q03,Spacing rule,Is nearest-neighbor spacing more stable than total formation width?,Local/topological control vs globally prescribed geometry
+Q04,Turn propagation,"When centroid heading changes, do apparent features respond simultaneously or sequentially?",Common forcing / rigid control vs leader-follower / flock-like propagation
+Q05,Neighbor exchange,Do left-to-right or nearest-neighbor ranks change during continuous tracking?,Formation station keeping vs decentralized flocking
+Q06,Linearity,"Why does 782 often project strongly along one axis, and does that structure persist after stabilization?","Formation geometry, projection, common flow, or sensor processing"
+Q07,Merge/split behavior,Are changes in resolved-feature count in 782 physical separations or image-resolution effects?,Tests whether topology transitions survive higher-resolution/raw-data review
+Q08,Common-medium hypothesis,"For 709, how do the brief 00:01–00:04 transient features move relative to the RHIBs, wakes, and stabilized background?",Separates the anomalous transit from persistent surface traffic and tests common-medium/camera-motion explanations
+Q09,Sensor invariance,"Does formation geometry survive contrast, zoom, and processing changes?",Physical relationship vs processing artifact
+Q10,Cross-case recurrence,Do normalized geometric motifs recur across unrelated cases after controlling for sensor type?,Potential behavioral taxonomy rather than object-shape taxonomy

@@ -1,0 +1,7 @@
+video_id,time_s,classification,note
+DOD_111719718,122.625,candidate discontinuity,"Large frame-to-frame global image change; could be edit, processing switch, sensor slew, or scene transition."
+DOD_111719718,355.042,candidate discontinuity,Large frame-to-frame global image change.
+DOD_111719718,409.958,candidate discontinuity,Large frame-to-frame global image change.
+DOD_111719718,411.208,candidate discontinuity,Large frame-to-frame global image change.
+DOD_111719718,489.708,candidate discontinuity,Large frame-to-frame global image change near clip end.
+DOD_111719718,495.042,candidate discontinuity,Large frame-to-frame global image change near clip end.

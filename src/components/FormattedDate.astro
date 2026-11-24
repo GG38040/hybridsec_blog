@@ -1,13 +1,15 @@
 ---
-import { format } from 'date-fns';
-
 interface Props {
   date: Date;
 }
 
 const { date } = Astro.props;
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  dateStyle: 'long',
+  timeZone: 'UTC'
+}).format(date);
 ---
 
 <time datetime={date.toISOString()}>
-  {format(date, 'MMMM d, yyyy')}
+  {formattedDate}
 </time>
