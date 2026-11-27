@@ -3,7 +3,7 @@ title: "The Parallel Court"
 description: "How participatory true-crime media, platform incentives and institutional failures create an information attack surface, and what courts, policymakers and technology companies can do about it."
 pubDate: 2026-11-27
 topic: "hybrid-warfare"
-featuredImage: "/images/blog/the-parallel-court-hero.png"
+featuredImage: "/images/blog/Justice%20in%20the%20Digital%20Age.png"
 featuredImageAlt: "A courthouse and scales of justice surrounded by a network of glowing smartphone screens"
 featuredImageCaption: "AI-generated editorial illustration of the parallel information environment surrounding judicial proceedings."
 author:
